@@ -1,6 +1,6 @@
 import {FolderIcon} from "@heroicons/react/20/solid";
 import React from "react";
-import { projects } from "../data";
+import { projects } from "./data";
 
 export default function Projects() {
     return (

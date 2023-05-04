@@ -20,7 +20,7 @@ function NavBar() {
                     <a href="my_portfolio/src/components/Navbar#projects" className="text-gray-400 mr-7 hover:text-white">
                         About Me
                     </a>
-                    <a href="my_portfolio/src/components/Navbar#projects" className="text-gray-400 mr-7 hover:text-white">
+                    <a href="my_portfolio/src/components/Projects" className="text-gray-400 mr-7 hover:text-white">
                         Projects
                     </a>
                     <a href="my_portfolio/src/components/Navbar#skills" className="text-gray-400 mr-7 hover:text-white">
