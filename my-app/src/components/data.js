@@ -3,7 +3,7 @@ export const projects = [
         title: "Unmanned Underwater Vehicle",
         subtitle: "Python",
         description:
-            "This research project involves designing and implementing a software/hardware integration to provide underwater drone control for Unmanned Vehicles Robotarium research lab. Our team successfully integrated various electronic components and developed software to control the underwater drone. We had developed a GUI using Python that is capable of communicating with a Raspberry Pi and PX4 flight controller to send commands and read movement data. The project consists of a GUI, a Raspberry Pi 3 Model B, Pixhawk 4 autopilot, a drone prototype, and a list of other various electronic components. The project’s main objective is deploying and navigating the drone prototype within confined underwater spaces.",
+            "This research project involves designing and implementing a software/hardware integration to provide control for a drone prototype. Our team successfully integrated various electronic components and developed software to control the underwater drone. We had developed a GUI using Python that is capable of communicating with a Raspberry Pi and PX4 flight controller to send commands and read movement data. The project consists of a GUI, a Raspberry Pi 3 Model B, Pixhawk 4 autopilot, a drone prototype, and other various electronics.",
         src: "../images/drone.jpg",
         alt: "Drone Control Project",
         link: "https://github.com/HolstCh/Unmanned_Underwater_Vehicle",
@@ -21,27 +21,18 @@ export const projects = [
         title: "Group Home Data Management System",
         subtitle: "Python, Flask, MySQL, and HTML/CSS",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            "A web application inspired by the disorganization of my brother's group home. Group homes have many professionals involved; however, the application allows for three professionals to share data involving a youth at risk. The user types are: youth worker, psychologist, and pediatrician. Each user type is able to create a \"document\" which involves inputting data into the user's corresponding HTML form. Every time a document is created, a share code is generated and the user is able to share their document with another user.",
         src: "../images/group_home.jpg",
         alt: "Group Home Web Application Project",
-        link: "",
+        link: "https://github.com/HolstCh/Group-Home-Data-Management-Web-Application",
     },
     {
-        title: "Dots and Boxes Game",
-        subtitle: "JavaScript, HTML, and CSS",
+        title: "Professional Forum",
+        subtitle: "Python, Flask, MySQL, and JS/HTML/CSS",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            "This web application was developed to allow professionals to communicate through the use of a forum. The project was inspired by Reddit and LinkedIn. Each user is able to post questions to seek answers regarding problems they are encountering at their workplace. Each user can also search existing questions, post answers to other user's questions, and build their profile (i.e., past projects, companies). The application is currently hosted on PythonAnywhere and the link is in the README of the GitHub repository. ",
         src: "../images/forum.png",
         alt: "drone project",
         link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
-    },
-    {
-        title: "Dots and Boxes Game",
-        subtitle: "JavaScript, HTML, and CSS",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        src: "../images/chat_marketplace.jpg",
-        alt: "drone project",
-        link: "https://pythonbootcamp.com",
     },
 ];

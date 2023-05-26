@@ -21,14 +21,21 @@ export default function AboutMe() {
                     </p>
                     <div className="flex justify-center">
                         <a
-                            href="./Landing"
+                            href="/Resume_Chad_Holst.pdf"
+                            download="Resume_Chad_Holst.pdf"
                             className="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 rounded text-lg">
-                            Work With Me
+                            Download Resume
                         </a>
                         <a
                             href="#projects"
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                            See My Past Work
+                            See Past Projects
+                        </a>
+                        <a
+                            href="#"
+                            download="Resume_Chad_Holst.pdf"
+                            className="inline-flex text-white bg-blue-600 border-0 ml-4 py-2 px-6 focus:outline-none hover:bg-blue-400 rounded text-lg">
+                            Work With Me
                         </a>
                     </div>
                 </div>
