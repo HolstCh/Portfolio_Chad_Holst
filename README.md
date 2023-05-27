@@ -1,4 +1,5 @@
 # Chad's Portfolio
+The portfolio is hosted using Vercel and can be accessed with the following link: https://chad-holst-portfolio.vercel.app/
 
 ## Getting Started with Create React App
 
