@@ -32,7 +32,25 @@ export const projects = [
         description:
             "This web application was developed to allow professionals to communicate through the use of a forum. The project was inspired by Reddit and LinkedIn. Each user is able to post questions to seek answers regarding problems they are encountering at their workplace. Each user can also search existing questions, post answers to other user's questions, and build their profile (i.e., past projects, companies). The application is currently hosted on PythonAnywhere and the link is in the README of the GitHub repository. ",
         src: "../images/forum.png",
-        alt: "drone project",
+        alt: "forum project",
         link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
+    },
+    {
+        title: "Dots and Boxes Browser Game",
+        subtitle: "JS/HTML/CSS",
+        description:
+            "A three-player game influenced by the classic dots and boxes game. Players take turns clicking on a line to complete square(s). If the player completes a square, then they receive an extra turn. The program uses click handling events to enforce game logic, classes for abstraction, and a grid to identify components.",
+        src: "../images/dots.png",
+        alt: "drone project",
+        link: "https://github.com/HolstCh/Dots_Boxes_Game",
+    },
+    {
+        title: "Snowboarding Club Static Website",
+        subtitle: "HTML/CSS",
+        description:
+            "HTML/CSS static website about a hypothetical snowboarding/skiing club in Calgary. The website informs viewers about events, tutorials, and preparation. It is composed of 5 pages that consist of embedded YouTube videos, images, checklists, tables, and links. The website was developed to learn HTML and CSS fundamentals.",
+        src: "../images/ski_club.png",
+        alt: "static website project",
+        link: "https://github.com/HolstCh/Snowboard-Club-Website",
     },
 ];

@@ -13,7 +13,7 @@ export default function AboutMe() {
                     <h1 className="px-18 title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
                         I love to code and create.
                     </h1>
-                    <p className="text-gray-500 mb-8 leading-relaxed text-xl">
+                    <p className="text-black mb-8 leading-relaxed text-xl">
                         Once a heavy-duty technician apprentice; now, a fourth-year software engineering student who decided to pursue a career that I have a keen interest in.
                         I have a diverse technological background that allowed me to acquire various skills that I've used to overcome many challenges. I'm a committed learner
                         with a strong desire to become the optimal version of myself; I believe this desire will facilitate my goal of providing software services to benefit society.
@@ -28,12 +28,11 @@ export default function AboutMe() {
                         </a>
                         <a
                             href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-blue-400 rounded text-lg">
                             See Past Projects
                         </a>
                         <a
-                            href="#"
-                            download="Resume_Chad_Holst.pdf"
+                            href="#contact"
                             className="inline-flex text-white bg-blue-600 border-0 ml-4 py-2 px-6 focus:outline-none hover:bg-blue-400 rounded text-lg">
                             Work With Me
                         </a>

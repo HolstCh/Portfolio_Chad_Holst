@@ -12,9 +12,10 @@ export default function Projects() {
                         Projects
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
+                        The following are samples of projects that I have worked on in the past. Clicking on a project
+                        will redirect you to the GitHub repository that was used to maintain the project. The first
+                        four are group projects that I had contributed to, the last two are personal projects that I
+                        completed by myself.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4 sticky">
