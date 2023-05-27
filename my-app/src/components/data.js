@@ -48,7 +48,7 @@ export const projects = [
         title: "Snowboarding Club Static Website",
         subtitle: "HTML/CSS",
         description:
-            "HTML/CSS static website about a hypothetical snowboarding/skiing club in Calgary. The website informs viewers about events, tutorials, and preparation. It is composed of 5 pages that consist of embedded YouTube videos, images, checklists, tables, and links. The website was developed to learn HTML and CSS fundamentals.",
+            "HTML/CSS static website about a hypothetical snowboarding/skiing club in Calgary. The website informs viewers about events, tutorials, and preparation. It is composed of 5 pages that consist of embedded YouTube videos, images, checklists, tables, and links.",
         src: "../images/ski_club.png",
         alt: "static website project",
         link: "https://github.com/HolstCh/Snowboard-Club-Website",

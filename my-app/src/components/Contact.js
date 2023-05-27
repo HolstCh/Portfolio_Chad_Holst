@@ -1,4 +1,3 @@
-import {EnvelopeIcon} from "@heroicons/react/20/solid";
 import React from "react";
 import { SocialIcon } from 'react-social-icons';
 import {contacts} from "./contacts";
@@ -22,9 +21,13 @@ export default function Contact(){
                             <i className="text-3xl text-black mr-4">
                                 {contact.icon}
                             </i>
+                            {contact.id === 1 ?
+                            <a href="mailto:chad.holst@hotmail.com" className="text-lg mb-4 text-black" >
+								{contact.name}
+							</a>:
                             <span className="text-lg mb-4 text-black" >
 								{contact.name}
-							</span>
+							</span>}
                         </li>
                     ))}
                 </ul>

@@ -14,7 +14,7 @@ export default function Projects() {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
                         The following are samples of projects that I have worked on in the past. Clicking on a project
                         will redirect you to the GitHub repository that was used to maintain the project. The first
-                        four are group projects that I had contributed to, the last two are personal projects that I
+                        four are group projects that I had contributed to; the last two are personal projects that I
                         completed by myself.
                     </p>
                 </div>
