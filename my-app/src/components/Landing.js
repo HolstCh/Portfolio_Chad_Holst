@@ -15,7 +15,7 @@ export default function AboutMe() {
                     </h1>
                     <p className="text-black mb-8 leading-relaxed text-xl">
                         Once a heavy-duty technician apprentice; now, a fourth-year software engineering student who decided to pursue a career that I have a keen interest in.
-                        I have a diverse technological background that allowed me to acquire various skills that I've used to overcome many challenges. I'm a committed learner
+                        I have a diverse technological background that allowed me to acquire various skills that I've used to overcome many challenges. I'm committed to learning
                         with a strong desire to become the optimal version of myself; I believe this desire will facilitate my goal of providing software services to benefit society.
                         As software technology evolves, I intend to evolve with it.
                     </p>

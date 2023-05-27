@@ -22,7 +22,7 @@ export default function Contact(){
                                 {contact.icon}
                             </i>
                             {contact.id === 1 ?
-                            <a href="mailto:chad.holst@hotmail.com" className="text-lg mb-4 text-blue-600 underline" >
+                            <a href="mailto:chad.holst@hotmail.com" className="text-lg mb-4 text-blue-600" >
 								{contact.name}
 							</a>:
                             <span className="text-lg mb-4 text-black" >

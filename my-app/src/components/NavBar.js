@@ -1,10 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import {UserCircleIcon} from "@heroicons/react/20/solid";
-import {WrenchIcon} from "@heroicons/react/20/solid";
-import {EnvelopeIcon} from "@heroicons/react/20/solid";
-import {FolderIcon} from "@heroicons/react/20/solid";
 import {ChevronLeftIcon} from "@heroicons/react/24/solid";
 import {ChevronRightIcon} from "@heroicons/react/24/solid";
 
@@ -29,7 +22,7 @@ function NavBar() {
                         Contact
                     </a>
                     <span className="md:text-blue-600 md:text-5xl md:mb-4">/</span>
-                    <ChevronRightIcon className="md:text-blue-600 w-14 h-12 mr-10" />
+                    <ChevronRightIcon className="md:text-blue-600 w-14 h-12 mr-10 pr-3" />
                 </nav>
             </div>
         </header>
