@@ -12,7 +12,7 @@ export const projects = [
         title: "University of Calgary Marketplace",
         subtitle: "MERN stack (MongoDB, Express, React, and Node.js)",
         description:
-            "This web application is designed specifically for students to sell or purchase items conveniently at the university. As such, only students with a verified University of Calgary email are able to create posts to buy or sell items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone) and an option to chat through our built in messaging platform. Admin users are also supported which have the ability to ban students and delete users and posts.",
+            "This web application is designed specifically for students to sell or purchase items conveniently at the university. As such, only students with a verified University of Calgary email are able to create posts to buy or sell items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone), and an option to chat through our built in messaging platform. Admin users are also supported which have the ability to ban students and delete users and posts.",
         src: "../images/buy.png",
         alt: "Marketplace Web Application Project",
         link: "https://github.com/HolstCh/UofCMarketplace",
@@ -21,7 +21,7 @@ export const projects = [
         title: "Group Home Data Management System",
         subtitle: "Python, Flask, MySQL, and HTML/CSS",
         description:
-            "A web application inspired by the disorganization of my brother's group home. Group homes have many professionals involved; however, the application allows for three professionals to share data involving a youth at risk. The user types are: youth worker, psychologist, and pediatrician. Each user type is able to create a \"document\" which involves inputting data into the user's corresponding HTML form. Every time a document is created, a share code is generated and the user is able to share their document with another user.",
+            "A web application inspired by the disorganization of my brother's group home workplace. Group homes have many professionals involved; however, the application allows for three professionals to share data involving a youth at risk. The user types are: youth worker, psychologist, and pediatrician. Each user type is able to create a \"document\" which involves inputting data into the user's corresponding HTML form. Every time a document is created, a share code is generated and the user is able to share their document with another user.",
         src: "../images/group_home.jpg",
         alt: "Group Home Web Application Project",
         link: "https://github.com/HolstCh/Group-Home-Data-Management-Web-Application",
@@ -36,12 +36,29 @@ export const projects = [
         link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
     },
     {
+        title: "HTTP Proxy",
+        subtitle: "C++/Linux",
+        description:
+            "Created a proxy that uses TCP sockets and intercepts all HTTP requests and responses between a browser and web server. The proxy redirects each GET request for a JPG image to one of two file paths containing a PNG image. Additionally, the proxy replaces a keyword within the HTML message of a web server response with another word.",
+        src: "../images/proxy.png",
+        alt: "proxy project",
+        link: "https://github.com/HolstCh/HTTP-Proxy",
+    },
+    {
+        title: "Client-Server Decoder",
+        subtitle: "C++/Linux",
+        description:
+            "Two programs based on the client-server model which encodes and decodes messages based on vowels using TCP and UDP sockets. After the client sends an encoded or decoded message, the server responds with a decoded or encoded message respectively. Two streams are used each request, vowels are sent on UDP and non-vowels are sent on TCP.",
+        alt: "decoder project",
+        link: "https://github.com/HolstCh/Client-Server-Message-Decoder-Encoder",
+    },
+    {
         title: "Dots and Boxes Browser Game",
         subtitle: "JS/HTML/CSS",
         description:
             "A three-player game influenced by the classic dots and boxes game. Players take turns clicking on a line to complete square(s). If the player completes a square, then they receive an extra turn. The program uses click handling events to enforce game logic, classes for abstraction, and a grid to identify components.",
         src: "../images/dots.png",
-        alt: "drone project",
+        alt: "box game project",
         link: "https://github.com/HolstCh/Dots_Boxes_Game",
     },
     {

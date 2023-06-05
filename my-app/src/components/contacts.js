@@ -3,7 +3,7 @@ import { FiPhone, FiMail } from 'react-icons/fi';
 export const contacts = [
     {
         id: 1,
-        name: 'chad.holst@hotmail.com',
+        name: 'holstch@outlook.com',
         icon: <FiMail />,
     },
     {
