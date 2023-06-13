@@ -13,8 +13,8 @@ export default function Projects() {
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
                         The following are samples of projects that I have worked on in the past. Clicking on a project
-                        will redirect you to the GitHub repository that was used to maintain the project. The first
-                        four are group projects that I had contributed to; the last four are personal projects.
+                        will redirect you to the GitHub repository. The first four are group projects that I had
+                        contributed to and the last four are personal projects.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4 sticky">
