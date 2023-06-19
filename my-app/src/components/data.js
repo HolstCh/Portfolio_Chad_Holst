@@ -39,7 +39,7 @@ export const projects = [
         title: "HTTP Proxy",
         subtitle: "C++/Linux",
         description:
-            "Created a proxy that uses TCP sockets and intercepts all HTTP requests and responses between a browser and web server. The proxy redirects each GET request for a JPG image to one of two file paths containing a PNG image. Additionally, the proxy replaces a keyword within the HTML message of a web server response with another word.",
+            "Created a proxy that uses TCP sockets and intercepts all HTTP requests and responses between a browser and web server. The proxy redirects each GET request for a JPG image to one of two file paths containing a PNG clown image. Additionally, the proxy replaces a keyword within the HTML message of a web server response with another word.",
         src: "../images/proxy.png",
         alt: "proxy project",
         link: "https://github.com/HolstCh/HTTP-Proxy",
@@ -49,6 +49,7 @@ export const projects = [
         subtitle: "C++/Linux",
         description:
             "Two programs based on the client-server model which encodes and decodes messages based on vowels using TCP and UDP sockets. After the client sends an encoded or decoded message, the server responds with a decoded or encoded message respectively. Two streams are used each request, vowels are sent on UDP and non-vowels are sent on TCP.",
+        src: "../images/decoder.jpg",
         alt: "decoder project",
         link: "https://github.com/HolstCh/Client-Server-Message-Decoder-Encoder",
     },
