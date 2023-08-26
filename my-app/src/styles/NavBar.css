@@ -1,0 +1,37 @@
+
+header{
+    position: -webkit-sticky; /* first two lines make navbar stay in same position while scrolling across different browsers */
+    position: sticky;
+    top: 0; /* stick to top of viewport */
+    z-index: 10; /* for stacking navbar over Landing component */
+    background-color: #1a202c;
+}
+
+/* mobile first approach, organize flex items by col on mobile, then by row if on larger screen */
+.flex-navbar{
+    display: flex; /* use flexbox for responsive items */
+    flex-wrap: nowrap;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* mobile first approach, organize flex items by row if on larger screen */
+@media (min-width: 768px) {
+    .flex-navbar {
+        flex-direction: row;
+    }
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .name {
+        margin-bottom: 0; /* Override margin for larger screens, equivalent to md:mb-0 */
+    }
+}

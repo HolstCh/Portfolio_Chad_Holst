@@ -1,0 +1,54 @@
+/* used to adjust width of outermost container to specific screen ... if between min and next min level, then set to min */
+.responsive-width {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .responsive-width {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .responsive-width {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .responsive-width {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .responsive-width {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .responsive-width {
+        max-width: 1536px;
+    }
+}
+@media (min-width: 1792px) {
+    .responsive-width {
+        max-width: 1792px;
+    }
+}
+@media (min-width: 2048px) {
+    .responsive-width {
+        max-width: 2048px;
+    }
+}
+@media (min-width: 2304px) {
+    .responsive-width {
+        max-width: 2304px;
+    }
+}
+@media (min-width: 2560px) {
+    .responsive-width {
+        max-width: 2560px;
+    }
+}
+@media (min-width: 2816px) {
+    .responsive-width {
+        max-width: 2816px;
+    }
+}

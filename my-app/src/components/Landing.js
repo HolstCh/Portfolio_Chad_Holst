@@ -1,13 +1,14 @@
 import me from "../me.jpg"
 import {GoMarkGithub} from "react-icons/go";
 import developer from "../developer.svg"
+import "../styles/NavBar.css";
 
 export default function AboutMe() {
     return(
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
+                <div className="name lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Hello, I'm Chad.<br/>
                     </h1>
                     <h1 className="px-18 title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
