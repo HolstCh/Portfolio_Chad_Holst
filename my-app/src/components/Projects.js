@@ -1,18 +1,18 @@
 import {FolderIcon} from "@heroicons/react/20/solid";
 import React from "react";
 import { projects } from "./data";
-import "../styles/NavBar.css";
-
+import "../styles/media-queries.css"
+import "../styles/Projects.css"
 export default function Projects() {
     return (
         <section id="projects" className="text-gray-400 bg-white body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <FolderIcon className="mx-auto inline-block w-10 mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-black">
+                    <h1 className=" projects-text sm:text-4xl text-3xl font-medium title-font mb-4 text-black">
                         Projects
                     </h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
+                    <p className="projects-text lg:w-2/3 mx-auto leading-relaxed text-base text-black">
                         The following are samples of projects that I have worked on in the past. Clicking on a project
                         will redirect you to the GitHub repository. The first four are group projects that I had
                         contributed to and the last four are personal projects.

@@ -2,17 +2,18 @@ import me from "../me.jpg"
 import {GoMarkGithub} from "react-icons/go";
 import developer from "../developer.svg"
 import "../styles/NavBar.css";
+import "../styles/media-queries.css"
 
 export default function AboutMe() {
     return(
         <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+            <div className="responsive-width mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="name lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
-                        Hello, I'm Chad.<br/>
+                        Hi, I'm Chad.<br/>
                     </h1>
                     <h1 className="px-18 title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
-                        I love to code and create.
+                        Welcome to my coding journey.
                     </h1>
                     <p className="text-black mb-8 leading-relaxed text-xl">
                         Once a heavy-duty technician apprentice; now, a fourth-year software engineering student who decided to pursue a career that I have a keen interest in.
@@ -30,12 +31,12 @@ export default function AboutMe() {
                         <a
                             href="#projects"
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-blue-400 rounded text-lg">
-                            See Past Projects
+                            View My Work
                         </a>
                         <a
                             href="#contact"
                             className="inline-flex text-white bg-blue-600 border-0 ml-4 py-2 px-6 focus:outline-none hover:bg-blue-400 rounded text-lg">
-                            Work With Me
+                            Let's Collaborate
                         </a>
                     </div>
                 </div>

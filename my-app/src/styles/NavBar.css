@@ -9,7 +9,7 @@ header{
 
 /* mobile first approach, organize flex items by col on mobile, then by row if on larger screen */
 .flex-navbar{
-    display: flex; /* use flexbox for responsive items */
+    display: flex; /* use flexbox for responsive navbar */
     flex-wrap: nowrap;
     padding: 1.25rem;
     flex-direction: column;
@@ -33,5 +33,25 @@ header{
 @media (min-width: 768px) {
     .name {
         margin-bottom: 0; /* Override margin for larger screens, equivalent to md:mb-0 */
+    }
+}
+
+.flex-nav-items {
+    font-size: 1.25rem; /* Equivalent to md:text-xl in Tailwind CSS */
+    margin-right: auto; /* Equivalent to md:mr-auto in Tailwind CSS */
+    margin-left: 1rem; /* Equivalent to md:ml-4 in Tailwind CSS */
+    padding-top: 0.25rem; /* Equivalent to md:py-1 in Tailwind CSS */
+    padding-left: 1rem; /* Equivalent to md:pl-4 in Tailwind CSS */
+    margin-right: 0.75rem; /* Equivalent to mr-3 in Tailwind CSS */
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .flex-nav-items {
+        font-size: 1.5rem; /* Adjust font size for larger screens */
+        align-items: end;
     }
 }
