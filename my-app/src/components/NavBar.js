@@ -6,10 +6,10 @@ function NavBar() {
     return (
         <header>
             <div className="flex-navbar">
-                <a href="#about" className="name text-blue-600 ml-3 text-3xl">
+                <a href="#about" className="navbar-text text-blue-600 ml-3 text-3xl">
                     Chad Holst
                 </a>
-                <nav className="name flex-nav-items">
+                <nav className="navbar-text flex-nav-items">
                     <a href="#about" className="text-gray-400 ml-5 mr-7 hover:text-blue-600">
                         About Me
                     </a>

@@ -1,6 +1,13 @@
+.projects-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #9CA3AF;
+    margin-bottom: 0.75rem;
+}
+
 .projects-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: black;
+    color: #6B7280;
     margin-bottom: 0.75rem;
 }
