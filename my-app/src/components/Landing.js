@@ -1,6 +1,7 @@
 import me from "../me.jpg"
 import {GoMarkGithub} from "react-icons/go";
 import developer from "../developer.svg"
+import { Outlet, Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import "../styles/Landing.css"
 import "../styles/media-queries.css"
@@ -26,16 +27,16 @@ const Landing = () => {
                             className="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded text-lg">
                             Download Resume
                         </a>
-                        <a
-                            href="#projects"
+                        <Link
+                            to="/projects"
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-blue-400 rounded text-lg">
                             View My Work
-                        </a>
-                        <a
-                            href="#contact"
+                        </Link>
+                        <Link
+                            to="/contact"
                             className="inline-flex text-white bg-blue-600 border-0 ml-4 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded text-lg">
                             Let's Collaborate
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
