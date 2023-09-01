@@ -6,7 +6,7 @@ import {contacts} from "./contacts";
 export default function Contact(){
     return(
         <section id="contact" className="text-gray-400 bg-white body-font">
-            <div className="container px-5 py-5 mx-auto text-center lg:px-40">
+            <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <ChatBubbleLeftRightIcon className="mx-auto inline-block w-10 mb-4" />
                 <div className="flex flex-col w-full mb-10">
 
