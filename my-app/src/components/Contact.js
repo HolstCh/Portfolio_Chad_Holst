@@ -2,6 +2,7 @@ import React from "react";
 import { SocialIcon } from 'react-social-icons';
 import {ChatBubbleLeftRightIcon} from "@heroicons/react/20/solid";
 import {contacts} from "./contacts";
+import chad from "../chad.jpg";
 
 export default function Contact(){
     return(
@@ -13,6 +14,13 @@ export default function Contact(){
                     <h1 className="sm:text-4xl text-3xl font-medium title-font text-black">
                         Collaborate With Me
                     </h1>
+                </div>
+                <div className="lg:max-w-sm lg:w-1/3 md:w-1/2 w-5/6 mb-10 text-center">
+                    <img
+                        className="object-cover object-center rounded-full"
+                        alt="Chad Holst"
+                        src={chad}
+                    />
                 </div>
                 <div className="flex flex-row justify-center justify-items-center gap-4 mb-10">
                     <SocialIcon url="https://www.linkedin.com/in/chad-holst-31145b247/" />
