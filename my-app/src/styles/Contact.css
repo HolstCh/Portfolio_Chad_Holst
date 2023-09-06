@@ -1,0 +1,21 @@
+.flex-contact-items {
+    font-size: 1.25rem; /* Equivalent to md:text-xl in Tailwind CSS */
+    margin-right: auto; /* Equivalent to md:mr-auto in Tailwind CSS */
+    margin-left: 1rem; /* Equivalent to md:ml-4 in Tailwind CSS */
+    padding-top: 0.25rem; /* Equivalent to md:py-1 in Tailwind CSS */
+    padding-left: 1rem; /* Equivalent to md:pl-4 in Tailwind CSS */
+    margin-right: 0.75rem; /* Equivalent to mr-3 in Tailwind CSS */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .flex-contact-items {
+        font-size: 1.5rem; /* Adjust font size for larger screens */
+        flex-direction: row;
+        align-items: center;
+    }
+}

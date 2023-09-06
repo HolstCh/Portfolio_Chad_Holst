@@ -32,23 +32,3 @@
         max-width: 1792px;
     }
 }
-@media (min-width: 2048px) {
-    .responsive-width {
-        max-width: 2048px;
-    }
-}
-@media (min-width: 2304px) {
-    .responsive-width {
-        max-width: 2304px;
-    }
-}
-@media (min-width: 2560px) {
-    .responsive-width {
-        max-width: 2560px;
-    }
-}
-@media (min-width: 2816px) {
-    .responsive-width {
-        max-width: 2816px;
-    }
-}

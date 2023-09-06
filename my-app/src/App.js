@@ -1,18 +1,24 @@
 import Navbar from "./components/NavBar";
 import Projects from "./components/Projects";
-import Landing from "./components/Landing";
+import Home from "./components/Home";
 import Contact from "./components/Contact";
+import Layout from "./components/Layout";
 import './styles/NavBar.css';
 import React from "react"
+import {Routes, Route} from "react-router-dom";
 
 function App() {
   return (
       <>
-        <Navbar />
+        <Layout/>
         <div className="bg-white">
-              <Landing />
-              <Projects />
-              <Contact />
+            <Routes>
+                <Route path="/" element={<Layout />} />
+                    <Route index element={<Home />} />
+                    <Route path="home" element={<Home />} />
+                    <Route path="projects" element={<Projects />} />
+                    <Route path="contact" element={<Contact />} />
+            </Routes>
         </div>
       </>
   );
