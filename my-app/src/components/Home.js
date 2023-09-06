@@ -6,9 +6,9 @@ import "../styles/NavBar.css";
 import "../styles/Landing.css"
 import "../styles/media-queries.css"
 
-const Landing = () => {
+const Home = () => {
     return(
-        <section id="about">
+        <section id="home">
             <div className="responsive-width mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="landing-text lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
@@ -18,7 +18,7 @@ const Landing = () => {
                         Welcome to my coding journey.
                     </h1>
                     <p className="text-gray-500 mb-8 leading-relaxed text-xl">
-                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions.
+                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society!
                     </p>
                     <div className="flex justify-center">
                         <a
@@ -29,7 +29,7 @@ const Landing = () => {
                         </a>
                         <Link
                             to="/projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-blue-400 rounded text-lg">
+                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-blue-600 rounded text-lg">
                             View My Work
                         </Link>
                         <Link
@@ -50,4 +50,4 @@ const Landing = () => {
         </section>
     )
 }
-export default Landing;
+export default Home;
