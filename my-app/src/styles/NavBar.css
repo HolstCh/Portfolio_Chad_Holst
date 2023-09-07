@@ -44,8 +44,8 @@ header{
     padding-left: 1rem; /* Equivalent to md:pl-4 in Tailwind CSS */
     margin-right: 0.75rem; /* Equivalent to mr-3 in Tailwind CSS */
     display: flex;
-    flex-wrap: wrap;
-    font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+    flex-wrap: nowrap;
+    font-size: 0.92rem; /* Equivalent to text-base in Tailwind CSS */
     align-items: center;
 }
 
