@@ -1,24 +1,34 @@
 import me from "../me.jpg"
 import {GoMarkGithub} from "react-icons/go";
+import Typer from "react-typed";
 import developer from "../developer.svg"
 import { Outlet, Link } from "react-router-dom";
 import "../styles/NavBar.css";
-import "../styles/Landing.css"
-import "../styles/media-queries.css"
+import "../styles/Home.css"
+import "../styles/width.css"
 
 const Home = () => {
+
     return(
         <section id="home">
-            <div className="responsive-width mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+            <div className="responsive-width mx-auto flex px-10 py-5 md:flex-row flex-col items-center">
                 <div className="landing-text lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
-                        Hi, I'm Chad.<br/>
+                        Hello, I'm Chad.<br/>
                     </h1>
                     <h1 className="px-18 title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
-                        Welcome to my coding journey.
+                        I'm a {" "}
+                        <Typer
+                            strings={["mechanic.", "design enthusiast.", "innovator.", "software developer."]}
+                            typeSpeed={100}
+                            loop
+                            backSpeed={20}
+                            cursorChar="|"
+                            showCursor={true}
+                        />
                     </h1>
                     <p className="text-gray-500 mb-8 leading-relaxed text-xl">
-                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society!
+                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society. Let's innovate together!
                     </p>
                     <div className="flex justify-center">
                         <a

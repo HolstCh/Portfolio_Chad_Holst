@@ -1,7 +1,7 @@
 import {FolderIcon} from "@heroicons/react/20/solid";
 import React from "react";
 import { projects } from "./data";
-import "../styles/media-queries.css"
+import "../styles/width.css"
 import "../styles/Projects.css"
 
 export default function Projects() {

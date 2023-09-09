@@ -5,7 +5,7 @@ const Layout = () => {
         <>
             <header>
                 <div className="flex-navbar">
-                    <Link to="/" className="navbar-text text-blue-600 ml-3 text-3xl hover:text-blue-600">
+                    <Link to="/" className="navbar-text text-blue-600 ml-3 text-3xl">
                         Chad Holst
                     </Link>
                     <nav className="navbar-text flex-nav-items">
