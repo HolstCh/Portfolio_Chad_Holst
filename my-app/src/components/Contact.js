@@ -57,9 +57,9 @@ export default function Contact(){
                     </h1>
                 </div>
                 <div className="flex-contact-items gap-10">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 rounded-lg">
                         <img
-                            className="object-cover object-center rounded-lg pb-4"
+                            className="object-cover object-center rounded-full pb-4"
                             alt="Chad"
                             src={chad}
                         />
@@ -68,7 +68,7 @@ export default function Contact(){
                             <SocialIcon url="https://github.com/HolstCh" />
                             <SocialIcon url="mailto:holstch@outlook.com" />
                         </div>
-                        <ul className="flex flex-col justify-center items-center gap-2 mb-10">
+                        <ul className="flex flex-col justify-center items-center gap-2">
                             {contacts.map((contact) => (
                                 <li className="flex " key={contact.id}>
                                     <i className="text-3xl text-black mr-4">
@@ -151,7 +151,7 @@ export default function Contact(){
                                             onChange={(e) => setSubject(e.target.value)}
                                             value={subject}
                                             className={`${
-                                                errMsg === "Plese give your Subject!" &&
+                                                errMsg === "Please give your Subject!" &&
                                                 "outline-designColor"
                                             } contactInput`}
                                             type="text"

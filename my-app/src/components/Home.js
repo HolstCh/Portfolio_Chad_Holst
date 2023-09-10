@@ -14,9 +14,9 @@ const Home = () => {
             <div className="responsive-width mx-auto flex px-10 py-5 md:flex-row flex-col items-center">
                 <div className="landing-text lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
-                        Hello, I'm Chad.<br/>
+                        Hi, my name is Chad.<br/>
                     </h1>
-                    <h1 className="px-18 title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
                         I'm a {" "}
                         <Typer
                             strings={["mechanic.", "design enthusiast.", "innovator.", "software developer."]}
@@ -26,6 +26,9 @@ const Home = () => {
                             cursorChar="|"
                             showCursor={true}
                         />
+                    </h1>
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
+                        Welcome to my coding journey.<br/>
                     </h1>
                     <p className="text-gray-500 mb-8 leading-relaxed text-xl">
                         Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society. Let's innovate together!

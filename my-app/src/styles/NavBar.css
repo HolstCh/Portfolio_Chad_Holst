@@ -7,6 +7,14 @@ header{
     background-color: #1a202c;
 }
 
+footer{
+    position: -webkit-sticky; /* first two lines make navbar stay in same position while scrolling across different browsers */
+    position: sticky;
+    bottom: 0; /* stick to top of viewport */
+    z-index: 10; /* for stacking navbar over Landing component */
+    background-color: #1a202c;
+}
+
 /* mobile first approach, organize flex items by col on mobile, then by row if on larger screen */
 .flex-navbar{
     display: flex; /* use flexbox for responsive navbar */
@@ -15,6 +23,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
 
 /* mobile first approach, organize flex items by row if on larger screen */
 @media (min-width: 768px) {

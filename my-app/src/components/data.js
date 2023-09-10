@@ -1,5 +1,6 @@
 export const projects = [
     {
+        id: 1,
         title: "Unmanned Underwater Vehicle",
         subtitle: "Python",
         description:
@@ -9,6 +10,7 @@ export const projects = [
         link: "https://github.com/HolstCh/Unmanned_Underwater_Vehicle",
     },
     {
+        id: 0,
         title: "University of Calgary Marketplace",
         subtitle: "MERN stack (MongoDB, Express, React, and Node.js)",
         description:
@@ -25,6 +27,7 @@ export const projects = [
         src: "../images/group_home.jpg",
         alt: "Group Home Web Application Project",
         link: "https://github.com/HolstCh/Group-Home-Data-Management-Web-Application",
+        id: 0,
     },
     {
         title: "Professional Forum",
@@ -34,6 +37,7 @@ export const projects = [
         src: "../images/forum.png",
         alt: "forum project",
         link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
+        id: 0,
     },
     {
         title: "HTTP Proxy",
@@ -43,6 +47,7 @@ export const projects = [
         src: "../images/proxy.png",
         alt: "proxy project",
         link: "https://github.com/HolstCh/HTTP-Proxy",
+        id: 0,
     },
     {
         title: "Client-Server Decoder",
@@ -52,6 +57,7 @@ export const projects = [
         src: "../images/decoder.jpg",
         alt: "decoder project",
         link: "https://github.com/HolstCh/Client-Server-Message-Decoder-Encoder",
+        id: 0,
     },
     {
         title: "Dots and Boxes Browser Game",
@@ -61,6 +67,7 @@ export const projects = [
         src: "../images/dots.png",
         alt: "box game project",
         link: "https://github.com/HolstCh/Dots_Boxes_Game",
+        id: 0,
     },
     {
         title: "Snowboarding Club Static Website",
@@ -70,5 +77,6 @@ export const projects = [
         src: "../images/ski_club.png",
         alt: "static website project",
         link: "https://github.com/HolstCh/Snowboard-Club-Website",
+        id: 0,
     },
 ];
