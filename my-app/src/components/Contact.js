@@ -52,22 +52,23 @@ export default function Contact(){
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <ChatBubbleLeftRightIcon className="mx-auto inline-block w-10 mb-4" />
                 <div className="flex flex-col w-full mb-10">
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-black">
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
                         Collaborate With Me
                     </h1>
+                    <div className="flex flex-row justify-center justify-items-center gap-4">
+                        <SocialIcon url="https://www.linkedin.com/in/chad-holst-31145b247/" />
+                        <SocialIcon url="https://github.com/HolstCh" />
+                        <SocialIcon url="mailto:holstch@outlook.com" />
+                    </div>
                 </div>
                 <div className="flex-contact-items gap-10">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 rounded-lg">
                         <img
-                            className="object-cover object-center rounded-full pb-4"
+                            className="object-cover object-center rounded-full pb-12"
                             alt="Chad"
                             src={chad}
                         />
-                        <div className="flex flex-row justify-center justify-items-center gap-4 mb-4">
-                            <SocialIcon url="https://www.linkedin.com/in/chad-holst-31145b247/" />
-                            <SocialIcon url="https://github.com/HolstCh" />
-                            <SocialIcon url="mailto:holstch@outlook.com" />
-                        </div>
+                        {/*}
                         <ul className="flex flex-col justify-center items-center gap-2">
                             {contacts.map((contact) => (
                                 <li className="flex " key={contact.id}>
@@ -84,6 +85,7 @@ export default function Contact(){
                                 </li>
                             ))}
                         </ul>
+                        */}
                     </div>
                     <div className="w-full mb-10">
                         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
