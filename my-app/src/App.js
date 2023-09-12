@@ -29,7 +29,6 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="home" element={<Home />} />
                     <Route path="projects" element={<Projects />} />
-                    <Route path="project/1" element={<Project id={1} />} />
                     <Route path="contact" element={<Contact />} />
             </Routes>
         </div>
@@ -38,3 +37,5 @@ function App() {
 }
 
 export default App;
+
+/*  <Route path="project/1" element={<Project id={1} />} /> */

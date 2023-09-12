@@ -26,27 +26,6 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-wrap -m-4 sticky">
                     {projects.map((project) => (
-                        project.id === 1 ?
-                            <Link to="/project/1"
-                                key={project.image}
-                                className="sm:w-1/2 w-100 p-4">
-                                <div className="flex relative">
-                                    <img
-                                        alt={project.alt}
-                                        className="absolute inset-0 w-full h-full object-contain object-center"
-                                        src={project.src}
-                                    />
-                                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-100 hover:opacity-0">
-                                        <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
-                                            {project.subtitle}
-                                        </h2>
-                                        <h1 className="title-font text-lg font-medium text-white mb-3">
-                                            {project.title}
-                                        </h1>
-                                        <p className="leading-relaxed">{project.description}</p>
-                                    </div>
-                                </div>
-                            </Link> :
                         <a
                             href={project.link}
                             key={project.image}
@@ -74,3 +53,27 @@ export default function Projects() {
         </section>
     );
 }
+
+/*
+           project.id === 1 ?
+                            <Link to="/project/1"
+                                key={project.image}
+                                className="sm:w-1/2 w-100 p-4">
+                                <div className="flex relative">
+                                    <img
+                                        alt={project.alt}
+                                        className="absolute inset-0 w-full h-full object-contain object-center"
+                                        src={project.src}
+                                    />
+                                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-100 hover:opacity-0">
+                                        <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
+                                            {project.subtitle}
+                                        </h2>
+                                        <h1 className="title-font text-lg font-medium text-white mb-3">
+                                            {project.title}
+                                        </h1>
+                                        <p className="leading-relaxed">{project.description}</p>
+                                    </div>
+                                </div>
+                            </Link> :
+*/
