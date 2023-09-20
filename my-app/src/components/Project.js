@@ -1,8 +1,6 @@
-import Typer from "react-typed";
 import {Link} from "react-router-dom";
 import developer from "../developer.svg";
 import React from 'react'
-import { connect } from 'react-redux';
 import {FolderIcon} from "@heroicons/react/20/solid";
 
 const Project = (props) => {

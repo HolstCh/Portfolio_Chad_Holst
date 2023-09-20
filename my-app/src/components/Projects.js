@@ -5,7 +5,6 @@ import Project from "./Project";
 import "../styles/width.css"
 import "../styles/Projects.css"
 import {Link} from "react-router-dom";
-import { connect } from 'react-redux';
 import { addProject } from '../store/actions/projectActions';
 
 export default function Projects() {

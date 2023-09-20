@@ -1,6 +1,4 @@
 import me from "../me.jpg"
-import {GoMarkGithub} from "react-icons/go";
-import Typer from "react-typed";
 import developer from "../developer.svg"
 import { Outlet, Link } from "react-router-dom";
 import "../styles/NavBar.css";
@@ -15,17 +13,6 @@ const Home = () => {
                 <div className="landing-text lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Hi, my name is Chad.<br/>
-                    </h1>
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
-                        I'm a {" "}
-                        <Typer
-                            strings={["mechanic.", "design enthusiast.", "innovator.", "software developer."]}
-                            typeSpeed={100}
-                            loop
-                            backSpeed={20}
-                            cursorChar="|"
-                            showCursor={true}
-                        />
                     </h1>
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Welcome to my coding journey.<br/>
