@@ -10,6 +10,7 @@ import {Routes, Route} from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './store/store';
 import {projects} from "./components/data"
+import Skills from "./components/Skills"
 
 function App() {
     useEffect(() => {

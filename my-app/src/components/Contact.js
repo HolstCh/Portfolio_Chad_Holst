@@ -50,7 +50,7 @@ export default function Contact(){
     return(
         <section id="contact" className="projects-text text-gray-400 bg-white body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-                <ChatBubbleLeftRightIcon className="mx-auto inline-block w-10 mb-4" />
+                <ChatBubbleLeftRightIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
                 <div className="flex flex-col w-full mb-10">
                     <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
                         Collaborate With Me

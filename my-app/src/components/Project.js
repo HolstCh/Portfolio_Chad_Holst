@@ -4,7 +4,6 @@ import React from 'react'
 import {FolderIcon} from "@heroicons/react/20/solid";
 
 const Project = (props) => {
-
     return (
         <section id="project" className="projects-text text-gray-400 bg-white body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">

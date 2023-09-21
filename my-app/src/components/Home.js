@@ -1,9 +1,14 @@
 import me from "../me.jpg"
 import developer from "../developer.svg"
+import Skills from "./Skills"
 import { Outlet, Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import "../styles/Home.css"
 import "../styles/width.css"
+import React from "react";
+import {Cog6ToothIcon} from "@heroicons/react/20/solid";
+import { TypeAnimation } from 'react-type-animation';
+
 
 const Home = () => {
 
@@ -14,6 +19,19 @@ const Home = () => {
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Hi, my name is Chad.<br/>
                     </h1>
+                    <TypeAnimation className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800"
+                        sequence={[
+                            "I'm a mechanic and robotics hobbyist.",
+                            1000,
+                            "I'm a design enthusiast and an innovator.",
+                            1000,
+                            "I'm a software developer and an aspiring engineer.",
+                            3000
+                        ]}
+                        wrapper="span"
+                        speed={40}
+                        repeat={Infinity}
+                    />
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Welcome to my coding journey.<br/>
                     </h1>
@@ -47,6 +65,16 @@ const Home = () => {
                     />
                 </div>
             </div>
+            <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
+                <Cog6ToothIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
+                <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-black">
+                    Skills
+                </h1>
+                <p className="projects-text lg:w-2/3 mx-auto leading-relaxed text-base text-xl text-center text-black">
+                    My past experiences have provided opportunities to learn the following technologies
+                </p>
+            </div>
+            <Skills />
         </section>
     )
 }
