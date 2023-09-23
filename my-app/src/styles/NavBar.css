@@ -4,7 +4,6 @@ header{
     position: sticky;
     top: 0; /* stick to top of viewport */
     z-index: 10; /* for stacking navbar over Landing component */
-    background-color: #1a202c;
 }
 
 footer{
@@ -12,7 +11,6 @@ footer{
     position: sticky;
     bottom: 0; /* stick to top of viewport */
     z-index: 10; /* for stacking navbar over Landing component */
-    background-color: #1a202c;
 }
 
 /* mobile first approach, organize flex items by col on mobile, then by row if on larger screen */

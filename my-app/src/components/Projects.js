@@ -1,10 +1,8 @@
 import {FolderIcon} from "@heroicons/react/20/solid";
 import React from "react";
 import { projects } from "./data";
-import Project from "./Project";
 import "../styles/width.css"
 import "../styles/Projects.css"
-import {Link} from "react-router-dom";
 
 export default function Projects() {
 
@@ -21,7 +19,7 @@ export default function Projects() {
                         will redirect you to the GitHub repository.
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-4 sticky">
+                <div className="flex flex-wrap -m-16 sticky">
                     {projects.map((project) => (
                         <a
                             href={project.link}

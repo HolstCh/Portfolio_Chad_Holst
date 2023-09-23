@@ -4,7 +4,7 @@ const Layout = () => {
     return (
         <>
             <header>
-                <div className="flex-navbar">
+                <div className="flex-navbar bg-gray-900">
                     <Link to="/" className="name-text navbar-text ml-3 text-3xl">
                         Chad Holst
                     </Link>
