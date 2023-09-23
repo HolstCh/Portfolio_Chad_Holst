@@ -40,7 +40,7 @@ const Home = () => {
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Welcome to my coding journey.<br/>
                     </h1>
-                    <p className="text-gray-500 mb-8 leading-relaxed text-xl">
+                    <p className="text-gray-500 mb-8 leading-relaxed text-xl md:w-full w-3/4">
                         Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society. Let's innovate together!
                     </p>
                     <div className="flex justify-center">

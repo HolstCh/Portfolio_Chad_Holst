@@ -5,7 +5,6 @@ import Project from "./Project";
 import "../styles/width.css"
 import "../styles/Projects.css"
 import {Link} from "react-router-dom";
-import { addProject } from '../store/actions/projectActions';
 
 export default function Projects() {
 
@@ -17,10 +16,9 @@ export default function Projects() {
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-black">
                         Projects
                     </h1>
-                    <p className="projects-text lg:w-2/3 mx-auto leading-relaxed text-base text-black">
+                    <p className="projects-text lg:w-2/3 mx-auto leading-relaxed text-base text-xl text-black">
                         The following are samples of projects that I have worked on in the past. Clicking on a project
-                        will redirect you to the GitHub repository. The first four are group projects that I had
-                        contributed to and the last four are personal projects.
+                        will redirect you to the GitHub repository.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4 sticky">

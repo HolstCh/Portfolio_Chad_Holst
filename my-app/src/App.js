@@ -8,18 +8,10 @@ import './styles/NavBar.css';
 import React, {useEffect} from "react"
 import {Routes, Route} from "react-router-dom";
 import { Provider } from 'react-redux';
-import store from './store/store';
 import {projects} from "./components/data"
 import Skills from "./components/Skills"
 
 function App() {
-    useEffect(() => {
-
-        // Dispatch an action to add existing projects to the Redux store
-        projects.forEach((project) => {
-            store.dispatch({ type: 'ADD_PROJECT', payload: project });
-        });
-    }, []);
 
   return (
       <>
