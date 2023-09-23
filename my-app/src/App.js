@@ -7,9 +7,6 @@ import Layout from "./components/Layout";
 import './styles/NavBar.css';
 import React, {useEffect} from "react"
 import {Routes, Route} from "react-router-dom";
-import { Provider } from 'react-redux';
-import {projects} from "./components/data"
-import Skills from "./components/Skills"
 
 function App() {
 

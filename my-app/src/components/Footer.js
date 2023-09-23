@@ -1,10 +1,15 @@
 import "../styles/NavBar.css"
+import {SocialIcon} from "react-social-icons";
+import React from "react";
 
 function Footer() {
     return (
         <footer>
-            <div className="flex-navbar">
-            </div>
+                <div className="flex flex-row justify-end justify-items-stretch gap-4">
+                    <SocialIcon url="https://www.linkedin.com/in/chad-holst-31145b247/" />
+                    <SocialIcon url="https://github.com/HolstCh" />
+                    <SocialIcon url="mailto:holstch@outlook.com" />
+                </div>
         </footer>
     );
 }
