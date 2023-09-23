@@ -1,4 +1,4 @@
-import me from "../me.jpg"
+import chad from "../chad.jpg"
 import developer from "../developer.svg"
 import Skills from "./Skills"
 import { Outlet, Link } from "react-router-dom";
@@ -19,14 +19,19 @@ const Home = () => {
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
                         Hi, my name is Chad.<br/>
                     </h1>
-                    <TypeAnimation className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800"
+                    <TypeAnimation className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800 whitespace-nowrap "
                         sequence={[
-                            "I'm a mechanic and robotics hobbyist.",
+                            "I'm a mechanic.",
                             1000,
-                            "I'm a design enthusiast and an innovator.",
+                            "I'm a software developer.",
                             1000,
-                            "I'm a software developer and an aspiring engineer.",
-                            3000
+                            "I'm a design enthusiast.",
+                            1000,
+                            "I'm an innovator.",
+                            1000,
+                            "I'm an aspiring engineer.",
+                            1000,
+
                         ]}
                         wrapper="span"
                         speed={40}
