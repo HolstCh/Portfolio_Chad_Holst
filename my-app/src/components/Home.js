@@ -6,9 +6,10 @@ import "../styles/NavBar.css";
 import "../styles/Home.css"
 import "../styles/width.css"
 import React from "react";
-import {Cog6ToothIcon} from "@heroicons/react/20/solid";
+import {Cog6ToothIcon, LightBulbIcon} from "@heroicons/react/20/solid";
 import { TypeAnimation } from 'react-type-animation';
-
+import PhotoGallery from "./photoGallery";
+import {photos} from "./photos";
 
 const Home = () => {
 
@@ -23,9 +24,9 @@ const Home = () => {
                         sequence={[
                             "I'm a mechanic.",
                             1000,
-                            "I'm a software developer.",
-                            1000,
                             "I'm a design enthusiast.",
+                            1000,
+                            "I'm a software developer.",
                             1000,
                             "I'm an innovator.",
                             1000,
@@ -80,6 +81,16 @@ const Home = () => {
                 </p>
             </div>
             <Skills />
+            <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
+                <LightBulbIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
+                <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
+                    Interests
+                </h1>
+                <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
+                    Several of my recreational and professional interests that have assisted with my development as an individual
+                </p>
+            </div>
+            <PhotoGallery photos={photos} />
         </section>
     )
 }
