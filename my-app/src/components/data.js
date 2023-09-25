@@ -14,7 +14,7 @@ export const projects = [
         title: "University of Calgary Marketplace",
         subtitle: "MERN stack (MongoDB, Express, React, and Node.js)",
         description:
-            "This web application is designed specifically for students to sell or purchase items conveniently at the university. As such, only students with a verified University of Calgary email are able to create posts to buy or sell items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone), and an option to chat through our built in messaging platform. Admin users are also supported which have the ability to ban students and delete users and posts.",
+            "This web application is designed specifically for students to sell or purchase items conveniently at the university. Students with a verified University of Calgary email are able to create posts for the purpose of buying or selling items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone), and an option to chat through our built in real-time messaging platform. Admin users are also supported which have the ability to ban students and delete users/posts.",
         src: "../images/buy.png",
         alt: "Marketplace Web Application Project",
         link: "https://github.com/HolstCh/UofCMarketplace",
