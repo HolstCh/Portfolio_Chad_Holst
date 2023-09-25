@@ -8,7 +8,7 @@ import { FaPython, FaReact, FaNodeJs, FaCss3, FaJava, FaLinux } from "react-icon
 import { BiLogoFlask } from "react-icons/bi"
 import { AiOutlineHtml5, AiOutlineGithub } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb, SiTailwindcss, SiCplusplus, SiJavascript } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiCplusplus, SiJavascript, SiApachehadoop } from "react-icons/si";
 
 export default function Skills() {
     return(
@@ -22,8 +22,8 @@ export default function Skills() {
             <Skill label={"Tailwind"} icon={<SiTailwindcss color='blue' size={65} />}/>
             <Skill label={"Flask"} icon={<BiLogoFlask color='black' size={65}/>}/>
             <Skill label={"ReactJS"} icon={<FaReact color={"blue"} size={65} />}/>
-            <Skill label={"NodeJS"} icon={<FaNodeJs color='black' size={65} />}/>
-            <Skill label={"ExpressJS"} icon={<FaNodeJs color='blue' size={65} />}/>
+            <Skill label={"NodeJS/ExpressJS"} icon={<FaNodeJs color='black' size={65} />}/>
+            <Skill label={"Apache Hadoop"} icon={<SiApachehadoop color='blue' size={65} />}/>
             <Skill label={"MySQL"} icon={<GrMysql color='black' size={65} />}/>
             <Skill label={"MongoDB"} icon={<SiMongodb color='blue' size={65} />}/>
             <Skill label={"Linux/Bash"} icon={<FaLinux color='black' size={65} />}/>
