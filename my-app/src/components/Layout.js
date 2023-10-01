@@ -8,7 +8,7 @@ const Layout = () => {
                     <Link to="/" className="name-text navbar-text ml-3 text-3xl">
                         Chad Holst
                     </Link>
-                    <nav className="navbar-text flex-nav-items">
+                    <nav className="navbar-text flex-nav-items text-center">
                             <Link to="/home" className="text-gray-400 ml-5 mr-7 hover:text-blue-600">
                                 About Me
                             </Link>
