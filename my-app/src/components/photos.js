@@ -16,7 +16,7 @@ export const photos = [
         title:"Mechanics",
         src:"../images/mechanic.jpg",
         alt: "mechanic",
-        caption: "My first career was working as a Heavy Equipment Technician, I had enjoyed my time working on machinery as a part of a team. I still enjoy the challenge of disassembling/fixing/modifying! This picture was taken while we were converting truck into a dump truck before I cut the frame."
+        caption: "My first career was working as a Heavy Equipment Technician, I had enjoyed my time working on machinery as a part of a team. I still enjoy the challenge of disassembling/fixing/modifying! This picture was taken while we were converting a truck into a dump truck before I cut the frame."
     },
     {
         title:"Robotics",
