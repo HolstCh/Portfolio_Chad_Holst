@@ -2,7 +2,7 @@
 
 My personal website that was implemented with React and Tailwind to showcase some of my work. I purchased a domain and hosted the website using Vercel. The website utilizes an API (EmailJS) to recieve emails from potential employers.
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
