@@ -68,11 +68,11 @@ export default function Contact(){
                             <div className="bg-gray-900 w-full lgl:w-[60%] h-full py-10 flex flex-col gap-8 p-4 lgl:p-8 rounded-lg">
                                 <form ref={form} onSubmit={handleSend} className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
                                     <label>Name</label>
-                                    <input className="text-black" type="text" name="username"  onChange={(e) => setUsername(e.target.value)} placeholder="Chad Holst" />
+                                    <input className="text-black" type="text" name="username"  onChange={(e) => setUsername(e.target.value)} placeholder="John Smith" />
                                     <label>Email</label>
-                                    <input className="text-black" type="text" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="holstch@outlook.com" />
+                                    <input className="text-black" type="text" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="john.smith@outlook.com" />
                                     <label>Message</label>
-                                    <textarea className="text-black" name="message" onChange={(e) => setMessage(e.target.value)} placeholder="Hi Chad, can we meet next week?" />
+                                    <textarea className="text-black" name="message" onChange={(e) => setMessage(e.target.value)} placeholder="Good afternoon Chad, are you available for an interview?" />
                                     <button type="submit" className="text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded text-center">Send</button>
                                     {successMsg && (<p className="text-green-600">{successMsg}</p>)}
                                     {errMsg && (<p className="text-red-600">{errMsg}</p>)}

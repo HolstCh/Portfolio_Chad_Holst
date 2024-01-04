@@ -20,6 +20,34 @@ export const projects = [
         link: "https://github.com/HolstCh/UofCMarketplace",
     },
     {
+        id: 0,
+        title: "ML Models for Predicting a Song's Genre",
+        subtitle: "Spark and Python",
+        description:
+            "This Jupyter notebook implemented and compared various ML models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
+        src: "../images/ML_Models.jpg",
+        alt: "Genre Prediction",
+        link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",
+    },
+    {
+        title: "Personal Portfolio",
+        subtitle: "React and Tailwind CSS",
+        description:
+            "My personal website that was implemented with React and Tailwind CSS to showcase some of my work. I purchased a domain and hosted the website using Vercel. The website utilizes an API (EmailJS) to receive emails from potential employers and is mobile-responsive.",
+        src: "../images/portfolio.jpg",
+        alt: "Chad's Portfolio",
+        link: "https://github.com/HolstCh/Portfolio_Chad_Holst",
+    },
+    {
+        title: "Home Theatre PC UI",
+        subtitle: "HTML/CSS/JS",
+        description:
+            "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify). The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
+        src: "../images/HTPC.jpg",
+        alt: "HTPC UI",
+        link: "https://github.com/HolstCh/HTPC",
+    },
+    {
         title: "Group Home Data Management System",
         subtitle: "Python, Flask, MySQL, and HTML/CSS",
         description:
@@ -31,7 +59,7 @@ export const projects = [
     },
     {
         title: "Professional Forum",
-        subtitle: "Python, Flask, MySQL, and JS/HTML/CSS",
+        subtitle: "Python, Flask, MySQL, and HTML/CSS/JS",
         description:
             "This web application was developed to allow professionals to communicate through the use of a forum. The project was inspired by Reddit and LinkedIn. Each user is able to post questions to seek answers regarding problems they are encountering at their workplace. Each user can also search existing questions, post answers to other user's questions, and build their profile (i.e., past projects, companies). The application is currently hosted on PythonAnywhere and the link is in the README of the GitHub repository. ",
         src: "../images/forum.png",
