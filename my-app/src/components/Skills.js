@@ -12,7 +12,7 @@ import { SiMongodb, SiTailwindcss, SiCplusplus, SiJavascript, SiApachehadoop, Si
 
 export default function Skills() {
     return(
-        <ul className={"pt-10 container mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-6 lg:max-w-4xl"}>
+        <ul className={"pt-10 container mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-y-6 lg:max-w-4xl"}>
             <Skill label={"Python"} icon={<FaPython color='blue' size={65} />}/>
             <Skill label={"C/C++"} icon={<SiCplusplus color='black' size={65} />}/>
             <Skill label={"Java"} icon={<FaJava color="blue" size={65} />}/>
