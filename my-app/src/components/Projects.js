@@ -1,13 +1,23 @@
-import {FolderIcon} from "@heroicons/react/20/solid";
-import React from "react";
+import { FolderIcon } from "@heroicons/react/20/solid";
+import React, { useState } from "react";
+import { SocialIcon } from 'react-social-icons';
 import { projects } from "./data";
-import "../styles/width.css"
-import "../styles/Projects.css"
+import "../styles/width.css";
+import "../styles/Projects.css";
 
 export default function Projects() {
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const handleClick = (project) => {
+        setSelectedProject(project);
+    };
+
+    const handleCloseOverlay = () => {
+        setSelectedProject(null);
+    };
 
     return (
-        <section id="projects" className="projects-title text-gray-400 bg-white body-font">
+        <section id="projects" className="projects-title text-gray-400 bg-white body-font relative">
             <div className="responsive-width px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <FolderIcon className="mx-auto inline-block w-10 mb-4" />
@@ -15,60 +25,61 @@ export default function Projects() {
                         Projects
                     </h1>
                     <p className="projects-text lg:w-2/3 mx-auto leading-relaxed text-base sm:text-xl text-l text-black">
-                        The following are samples of projects that I have worked on in the past. Clicking on a project
-                        will redirect you to the GitHub repository.
+                        The following are samples of projects that I have worked on in the past.
+                        Clicking on a project will provide a description.
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-16 sticky">
+                <div className="flex flex-wrap -m-4">
                     {projects.map((project) => (
-                        <a
-                            href={project.link}
+                        <div
                             key={project.image}
-                            className="sm:w-1/2 w-100 p-4">
-                            <div className="flex relative">
-                                <img
-                                    alt={project.alt}
-                                    className="absolute inset-0 w-full h-full object-contain object-center"
-                                    src={project.src}
-                                />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-100 hover:opacity-0">
-                                    <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
-                                        {project.subtitle}
-                                    </h2>
-                                    <h1 className="title-font text-lg font-medium text-white mb-3">
+                            className="sm:w-1/2 md:w-full lg:w-full p-4 cursor-pointer"
+                            onClick={() => handleClick(project)}
+                        >
+                            <div className="relative">
+                                <div className="overlay-text absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900">
+                                    <h1 className="title-font lg:text-2xl text-xl font-medium text-white mb-3">
                                         {project.title}
                                     </h1>
-                                    <p className="leading-relaxed">{project.description}</p>
+                                    <h2 className="text-md lg:text-lg title-font font-medium text-blue-400 mb-3">
+                                        {project.subtitle}
+                                    </h2>
+                                    <h2 className="text-sm lg:text-lg title-font font-medium text-gray-400">
+                                        {project.summary}
+                                    </h2>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </div>
+            {selectedProject && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-gray-900 p-8 rounded-md max-w-3xl w-full h-full overflow-y-auto relative">
+                        <button
+                            className="absolute top-2 right-2 bg-red-700 px-3 text-white rounded hover:text-gray-700 cursor-pointer text-2xl"
+                            onClick={handleCloseOverlay}
+                        >
+                            &times; {/* X character */}
+                        </button>
+                        <h1 className="lg:text-3xl text-xl font-semibold text-center text-white mb-3">{selectedProject.title}</h1>
+                        <h2 className="text-md lg:text-lg title-font font-medium text-center text-blue-400 mb-3">{selectedProject.subtitle}</h2>
+                        <img
+                            alt={selectedProject.alt}
+                            className="object-cover object-center mb-4 rounded-md"
+                            src={selectedProject.src}
+                        />
+                        <div>
+                            <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Project Description</h2>
+                            <p className="text-base text-gray-400 leading-relaxed mb-3">{selectedProject.description}</p>
+                            <div className="flex flex-col items-center">
+                                <h2 className="text-md lg:text-xl title-font font-medium text-white mb-3">Repository Link</h2>
+                                <SocialIcon className="items-center" url={selectedProject.link} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
-
-/*
-           project.id === 1 ?
-                            <Link to="/project/1"
-                                key={project.image}
-                                className="sm:w-1/2 w-100 p-4">
-                                <div className="flex relative">
-                                    <img
-                                        alt={project.alt}
-                                        className="absolute inset-0 w-full h-full object-contain object-center"
-                                        src={project.src}
-                                    />
-                                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-100 hover:opacity-0">
-                                        <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
-                                            {project.subtitle}
-                                        </h2>
-                                        <h1 className="title-font text-lg font-medium text-white mb-3">
-                                            {project.title}
-                                        </h1>
-                                        <p className="leading-relaxed">{project.description}</p>
-                                    </div>
-                                </div>
-                            </Link> :
-*/
