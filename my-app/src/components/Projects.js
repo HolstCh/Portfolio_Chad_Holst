@@ -57,12 +57,12 @@ export default function Projects() {
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-gray-900 p-8 rounded-md max-w-3xl w-full h-full overflow-y-auto relative">
                         <button
-                            className="absolute top-2 right-2 bg-red-700 px-3 text-white rounded hover:text-gray-700 cursor-pointer text-2xl"
+                            className="absolute top-2 right-2 bg-red-700 hover:bg-red-600 px-2.5 text-white rounded hover:text-slate-800 cursor-pointer text-2xl"
                             onClick={handleCloseOverlay}
                         >
                             &times; {/* X character */}
                         </button>
-                        <h1 className="lg:text-3xl text-xl font-semibold text-center text-white mb-3">{selectedProject.title}</h1>
+                        <h1 className="lg:text-3xl text-xl font-semibold text-center text-white">{selectedProject.title}</h1>
                         <h2 className="text-md lg:text-lg title-font font-medium text-center text-blue-400 mb-3">{selectedProject.subtitle}</h2>
                         <img
                             alt={selectedProject.alt}
