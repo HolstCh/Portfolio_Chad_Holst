@@ -28,11 +28,10 @@ const Home = () => {
                             1000,
                             "I'm a software developer.",
                             1000,
-                            "I'm an innovator.",
+                            "I'm a creative problem-solver.",
                             1000,
                             "I'm an aspiring engineer.",
                             1000,
-
                         ]}
                         wrapper="span"
                         speed={40}
@@ -42,7 +41,7 @@ const Home = () => {
                         Welcome to my coding journey.<br/>
                     </h1>
                     <p className="text-gray-500 mb-8 sm:text-xl leading-relaxed text-l md:w-full w-7/8">
-                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My experiences as an apprentice have instilled in me: problem-solving abilities, a collaborative skill set, and a keen eye for detail. Such qualities facilitate my commitment to crafting innovative software solutions for society. Let's innovate together!
+                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My work experience has honed my problem-solving abilities, collaborative skill set, and keen eye for detail; while my education has instilled in me a results-driven and analytical approach. Such qualities facilitate my commitment to crafting robust software solutions for society. If our values align, let's thrive together!
                     </p>
                     <div className="flex flex-wrap md:flex-nowrap justify-center md:text-lg">
                         <a
