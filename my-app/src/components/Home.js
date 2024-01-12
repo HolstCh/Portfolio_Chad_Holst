@@ -1,12 +1,13 @@
 import chad from "../chad.jpg"
 import developer from "../developer.svg"
 import Skills from "./Skills"
+import Courses from "./Courses"
 import { Outlet, Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import "../styles/Home.css"
 import "../styles/width.css"
 import React from "react";
-import {Cog6ToothIcon, LightBulbIcon} from "@heroicons/react/20/solid";
+import {Cog6ToothIcon, LightBulbIcon, AcademicCapIcon} from "@heroicons/react/20/solid";
 import { TypeAnimation } from 'react-type-animation';
 import PhotoGallery from "./photoGallery";
 import {photos} from "./photos";
@@ -23,6 +24,8 @@ const Home = () => {
                     <TypeAnimation className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-800 whitespace-nowrap "
                         sequence={[
                             "I'm a mechanic.",
+                            1000,
+                            "I'm a software developer.",
                             1000,
                             "I'm a design enthusiast.",
                             1000,
@@ -79,12 +82,23 @@ const Home = () => {
             </div>
             <Skills />
             <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
+                <AcademicCapIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
+                <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
+                    Education
+                </h1>
+                <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
+                    Bachelor of Science in Software Engineering (GPA: 3.5 / 4.0) <br />
+                    Numerous courses have advanced my expertise in software development
+                </p>
+                <Courses />
+            </div>
+            <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
                 <LightBulbIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
                     Interests
                 </h1>
                 <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
-                    Several of my recreational and professional interests that have assisted with my development as an individual
+                    Several of my recreational and professional interests that have assisted with my individual development
                 </p>
             </div>
             <PhotoGallery photos={photos} />
