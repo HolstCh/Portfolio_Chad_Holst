@@ -18,7 +18,7 @@ export const projects = [
         description:
             "This web application is designed specifically for students to sell or purchase items conveniently at the university. Student users are able to create posts for the purpose of buying or selling items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone), and an option to chat through our built in real-time messaging platform. Admin users are also supported which have the ability to ban students and delete users/posts.",
         summary:
-            "Marketplace web application for students at U of C to communicate regarding buy and sell posts",
+            "Responsive marketplace web application for students at U of C to communicate regarding buy and sell posts",
         src: "../images/buy.png",
         alt: "Marketplace Web Application Project",
         link: "https://github.com/HolstCh/UofCMarketplace",
@@ -41,7 +41,7 @@ export const projects = [
         description:
             "My personal website that was implemented to showcase some of my software projects. I purchased a domain and hosted the website using Vercel. The website utilizes an API (EmailJS) to receive emails from potential employers and is mobile-responsive.",
         summary:
-            "Personal website that is currently being used to view my software projects",
+            "Responsive personal website that is currently being used to view a sample of my software projects",
         src: "../images/portfolio.jpg",
         alt: "Chad's Portfolio",
         link: "https://github.com/HolstCh/Portfolio_Chad_Holst",

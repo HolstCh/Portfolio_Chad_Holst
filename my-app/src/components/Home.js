@@ -26,11 +26,9 @@ const Home = () => {
                             1000,
                             "I'm a design enthusiast.",
                             1000,
-                            "I'm a software developer.",
+                            "I'm an engineering graduate.",
                             1000,
                             "I'm a creative problem-solver.",
-                            1000,
-                            "I'm an aspiring engineer.",
                             1000,
                         ]}
                         wrapper="span"
