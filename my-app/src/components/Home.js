@@ -1,8 +1,7 @@
-import chad from "../chad.jpg"
 import developer from "../developer.svg"
 import Skills from "./Skills"
 import Courses from "./Courses"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import "../styles/Home.css"
 import "../styles/width.css"
@@ -21,7 +20,7 @@ const Home = () => {
                     <h1 className="title-font sm:text-4xl text-xl mb-4 font-medium text-blue-600">
                         Hi, my name is Chad.<br/>
                     </h1>
-                    <TypeAnimation className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-800 whitespace-nowrap "
+                    <TypeAnimation className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-800 whitespace-nowrap"
                         sequence={[
                             "I'm a mechanic.",
                             1000,
@@ -44,21 +43,21 @@ const Home = () => {
                     <p className="text-gray-500 mb-8 sm:text-xl leading-relaxed text-l md:w-full w-7/8">
                         Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My work experience has honed my problem-solving abilities, collaborative skill set, and keen eye for detail; while my education has instilled in me a results-driven and analytical approach. Such qualities facilitate my commitment to crafting robust software solutions for society. If our values align, let's thrive together!
                     </p>
-                    <div className="flex flex-wrap md:flex-nowrap justify-center md:text-lg">
+                    <div className="flex md:flex-col sm:flex-col lg:flex-row flex-wrap justify-center items-center text-lg">
                         <a
                             href="/Resume_Chad_Holst.pdf"
                             download="Resume_Chad_Holst.pdf"
-                            className="mb-4 inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded text-l">
+                            className="mb-4 text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded-md font-bold text-lg mb-2 text-center">
                             Download Resume
                         </a>
                         <Link
                             to="/projects"
-                            className="mb-4 md:ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 hover:text-blue-600 rounded text-l">
+                            className="mb-4 md:ml-4 ml-4 text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 hover:text-blue-600 rounded-md font-bold text-lg mb-2 text-center">
                             View My Work
                         </Link>
                         <Link
                             to="/contact"
-                            className="mb-4 inline-flex text-white bg-blue-600 border-0 md:ml-4 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded text-l">
+                            className="mb-4 md:ml-4 text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-400 hover:text-slate-800 rounded-md font-bold text-lg mb-2 text-center">
                             Let's Collaborate
                         </Link>
                     </div>
