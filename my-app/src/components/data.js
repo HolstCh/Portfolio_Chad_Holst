@@ -19,23 +19,24 @@ export const projects = [
         link: "https://github.com/HolstCh/Unmanned_Underwater_Vehicle",
     },
     {
+        id:2,
         title: "University of Calgary Marketplace",
         subtitle: "MERN stack (MongoDB, Express, React, and Node.js)",
         description:
             "This web application is designed specifically for students to sell or purchase items conveniently at the university. Student users are able to create posts for the purpose of buying or selling items. When a student creates a post, it will include information about the item they wish to sell or buy, their contact information (email or phone), and an option to chat through our built in real-time messaging platform. Admin users are also supported which have the ability to ban students and delete users/posts.",
         summary:
-            "Responsive marketplace web application for students at U of C to communicate regarding buy and sell posts",
+            "Responsive marketplace web application for students to communicate regarding buy and sell posts",
         src: "../images/buy.png",
         alt: "Marketplace Web Application Project",
         link: "https://github.com/HolstCh/UofCMarketplace",
     },
     {
-        title: "ML Models for Predicting a Song's Genre",
+        title: "Song Genre Prediction",
         subtitle: "Apache Spark and Python",
         description:
-            "This Jupyter notebook implemented and compared various ML models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
+            "This Jupyter notebook implemented and compared various machine learning models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
         summary:
-            "Jupyter notebook that utilizes sentiment analysis and ML to predict if a song is pop or rap",
+            "Jupyter notebook that utilizes sentiment analysis and machine learning to predict if a song is pop or rap",
         src: "../images/ML_Models.jpg",
         alt: "Genre Prediction",
         link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",

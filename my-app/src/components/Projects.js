@@ -29,7 +29,7 @@ export default function Projects() {
                         Clicking on a project will provide a description.
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
+                <div className="flex flex-wrap -m-16">
                     {projects.map((project) => (
                         <div
                             key={project.image}
@@ -64,12 +64,23 @@ export default function Projects() {
                         </button>
                         <h1 className="lg:text-3xl text-xl font-semibold text-center text-white">{selectedProject.title}</h1>
                         <h2 className="text-md lg:text-lg title-font font-medium text-center text-blue-400 mb-3">{selectedProject.subtitle}</h2>
+                        {selectedProject.id === 2 ? <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Buy Page</h2> : null }
                         <img
                             alt={selectedProject.alt}
                             className="object-cover object-center mb-4 rounded-md"
                             src={selectedProject.src}
                         />
                         <div>
+                            {selectedProject.id === 2 ?
+                                <div className="items-center flex flex-col py-2">
+                                    <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Real-Time Chat Messaging</h2>
+                                    <img
+                                        alt="drone team"
+                                        className="object-cover object-center mb-4 rounded-md"
+                                        src={"../images/chat_marketplace.jpg"}
+                                    />
+                                </div>
+                                : null}
                             <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Project Description</h2>
                             <p className="text-base text-gray-400 leading-relaxed mb-3">{selectedProject.description}</p>
                             {selectedProject.id === 1 ?

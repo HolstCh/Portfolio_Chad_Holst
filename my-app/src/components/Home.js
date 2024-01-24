@@ -91,17 +91,20 @@ const Home = () => {
                 </p>
                 <Courses />
             </div>
-            <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
-                <LightBulbIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
-                <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
-                    Interests
-                </h1>
-                <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
-                    Several of my recreational and professional interests that have assisted with my individual development
-                </p>
-            </div>
-            <PhotoGallery photos={photos} />
         </section>
     )
 }
 export default Home;
+
+/**
+ *             <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
+ *                 <LightBulbIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
+ *                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
+ *                     Interests
+ *                 </h1>
+ *                 <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
+ *                     Several of my recreational and professional interests that have assisted with my individual development
+ *                 </p>
+ *             </div>
+ *             <PhotoGallery photos={photos} />
+ */

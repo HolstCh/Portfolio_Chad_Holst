@@ -16,12 +16,6 @@ export const photos = [
         title:"Mechanics",
         src:"../images/mechanic.jpg",
         alt: "mechanic",
-        caption: "My first career was working as a Heavy Equipment Technician, I enjoyed my time repairing/building/modifying machinery as a part of a team. This picture was taken while we were converting a van into a dump truck; before I cut the frame and installed hydraulics."
+        caption: "My first career was working as a Heavy Equipment Technician, I enjoyed my time analyzing, modifying, and repairing physical systems as a part of a team. This picture was taken while we were converting a van into a dump truck; before I cut the frame and installed hydraulics."
     },
-    {
-        title:"Learning",
-        src:"../images/robotics.jpg",
-        alt: "robot team",
-        caption: "I've always been curious and lately I've had a growing interest in robotics and AI. This is my software/electrical team where we engineered a distributed system for a drone prototype. Some of my goals are to learn more about each subject as a hobby."
-    }
 ];
