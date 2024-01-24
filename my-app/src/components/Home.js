@@ -52,7 +52,7 @@ const Home = () => {
                         </a>
                         <Link
                             to="/projects"
-                            className="mb-4 md:ml-4 ml-4 text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 hover:text-blue-600 rounded-md font-bold text-lg mb-2 text-center">
+                            className="mb-4 md:ml-4 sm:ml-4 text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 hover:text-blue-600 rounded-md font-bold text-lg mb-2 text-center">
                             View My Work
                         </Link>
                         <Link

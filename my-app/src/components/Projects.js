@@ -72,7 +72,15 @@ export default function Projects() {
                         <div>
                             <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Project Description</h2>
                             <p className="text-base text-gray-400 leading-relaxed mb-3">{selectedProject.description}</p>
-                            {selectedProject.id === 1 ? <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Testimonials</h2>
+                            {selectedProject.id === 1 ?
+                                <div className="items-center flex flex-col">
+                                    <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Testimonials</h2>
+                                    <img
+                                        alt="drone team"
+                                        className="object-cover object-center mb-4 rounded-md"
+                                        src={"../images/robotics.jpg"}
+                                    />
+                                </div>
                                 : null}
                             {selectedProject.id === 1 ? selectedProject.testimonials.map((testimonial) => (<p className="text-base text-gray-400 leading-relaxed mb-3">{testimonial}</p>)) : null}
                             <div className="flex flex-col items-center">
