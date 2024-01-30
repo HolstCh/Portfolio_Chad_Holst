@@ -56,7 +56,7 @@ export const projects = [
         title: "Home Theatre Personal Computer User Interface",
         subtitle: "HTML/CSS/JS",
         description:
-            "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify) while practicing Task-Centered System Design. The user interface focuses on movies, TV shows, music, and videos. The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
+            "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify) while practicing User-Centered Design (UCD). The user interface focuses on movies, TV shows, music, and videos. The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
         summary:
             "Front-end project that focuses on integrating media content and their corresponding applications",
         src: "../images/HTPC.jpg",
