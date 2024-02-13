@@ -3,7 +3,7 @@ export const projects = [
         id: 1,
         testimonials: ["\"Chad is hardworking, reliable, and a very talented engineer. He has a calm and confident\n" +
         "demeanour and he was an absolute pleasure to work with. He is the definition of a great\n" +
-        "team member and an asset to the success of the project.\"", "\"Chads drive to seek and learn was inspiring and motivated me to do the same, his\n" +
+        "team member and an asset to the success of the project.\"", "\"Chad's drive to seek and learn was inspiring and motivated me to do the same, his\n" +
         "communication was rock solid and helped the group understand the tasks he was\n" +
         "progressing on.\"", "\"Excellent job in developing and maintaining the hardware and software required for the\n" +
         "project! This is extremely important and made our integration go very well. I can't stress\n" +
