@@ -86,7 +86,7 @@ const Home = () => {
                     Education
                 </h1>
                 <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
-                    Bachelor of Science in Software Engineering (GPA: 3.5 / 4.0) <br />
+                    Bachelor of Science in Software Engineering With Distinction<br />
                     Numerous courses have advanced my expertise in software development
                 </p>
                 <Courses />
