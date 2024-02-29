@@ -41,7 +41,7 @@ const Home = () => {
                         Welcome to my coding journey.<br/>
                     </h1>
                     <p className="text-gray-500 mb-8 sm:text-xl leading-relaxed text-l md:w-full w-7/8">
-                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My work experience has honed my problem-solving abilities, collaborative skill set, and keen eye for detail; while my education has instilled in me a results-driven and analytical approach. Such qualities facilitate my commitment to crafting robust software solutions for society. If our values align, let's thrive together!
+                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My work experience has honed my problem-solving abilities, collaborative skill set, and keen eye for detail; while my education has instilled in me a results-driven and analytical approach. Such qualities facilitate my commitment to crafting robust software solutions for society by improving lives. I'm eager to join a new team that shares this vision and values quality, creativity, and learning. If our values align, let's thrive together!
                     </p>
                     <div className="flex md:flex-col sm:flex-col lg:flex-row flex-wrap justify-center items-center text-lg">
                         <a
