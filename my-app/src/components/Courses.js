@@ -59,7 +59,7 @@ const Courses = () => {
         return (
             <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 {courses.map((course, index) => (
-                    <div key={index} className={`py-2 px-6 rounded-md shadow-md
+                    <div key={index} className={`py-2 px-6 rounded-md shadow-md text-center
                  ${index % 2 === 0 ? 'bg-blue-600' : 'bg-gray-800'}`}>
                         <h3 className={`font-bold text-lg mb-2 text-center
                  ${index % 2 === 0 ? 'text-white' : 'text-gray-400'}`}>{course}</h3>

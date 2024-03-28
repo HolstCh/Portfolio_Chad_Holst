@@ -80,7 +80,7 @@ const Home = () => {
                 </p>
             </div>
             <Skills />
-            <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
+            <div className="landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
                 <AcademicCapIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
                     Education
