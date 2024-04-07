@@ -91,15 +91,15 @@ export default function Projects() {
                                         className="object-cover object-center mb-4 rounded-md"
                                         src={"../images/software_architecture.jpg"}
                                     />
-                                    <h2 className="text-sm lg:text-lg title-font font-medium text-gray-400 mb-3">
-                                        <h2 className="title-font font-medium mb-2 text-sm lg:text-lg">The <span className="text-blue-400">Software Architecture</span> contains the following modules:</h2>
+                                    <div className="text-sm lg:text-lg title-font font-medium text-gray-400 mb-3">
+                                        <h2 className="title-font font-medium mb-2 text-sm lg:text-lg">The <span className="text-blue-400">Software Architecture</span> integrates the <span className="text-blue-400">MVC</span> pattern with a <span className="text-blue-400">Client/Server</span> architecture:</h2>
                                         <ul className="list-disc pl-5">
                                             <li><span className="text-blue-400">Model:</span>  contains logic, calculations, and direct PX4 communication </li>
                                             <li><span className="text-blue-400">View:</span>  user interface to display data and receive commands from the user </li>
                                             <li><span className="text-blue-400">Controller:</span>  processes command data and relays data between Model and View </li>
                                             <li><span className="text-blue-400">Client/Server:</span>  architecture between Controller and Model modules </li>
                                         </ul>
-                                    </h2>
+                                    </div>
                                     <img
                                         alt="drone team"
                                         className="object-cover object-center mb-4 rounded-md"
