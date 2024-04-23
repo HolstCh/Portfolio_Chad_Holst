@@ -32,7 +32,7 @@ export default function Projects() {
                 <div className="flex flex-wrap -m-16">
                     {projects.map((project) => (
                         <div
-                            key={project.image}
+                            key={project.id}
                             className="sm:w-1/2 md:w-full lg:w-full p-4 cursor-pointer"
                             onClick={() => handleClick(project)}
                         >
@@ -91,13 +91,13 @@ export default function Projects() {
                                         className="object-cover object-center mb-4 rounded-md"
                                         src={"../images/software_architecture.jpg"}
                                     />
-                                    <div className="text-sm lg:text-lg title-font font-medium text-gray-400 mb-3">
+                                    <div key="software_modules" className="text-sm lg:text-lg title-font font-medium text-gray-400 mb-3">
                                         <h2 className="title-font font-medium mb-2 text-sm lg:text-lg">The <span className="text-blue-400">Software Architecture</span> integrates the <span className="text-blue-400">MVC</span> pattern with a <span className="text-blue-400">Client/Server</span> architecture:</h2>
                                         <ul className="list-disc pl-5">
-                                            <li><span className="text-blue-400">Model:</span>  contains logic, calculations, and direct PX4 communication </li>
-                                            <li><span className="text-blue-400">View:</span>  user interface to display data and receive commands from the user </li>
-                                            <li><span className="text-blue-400">Controller:</span>  processes command data and relays data between Model and View </li>
-                                            <li><span className="text-blue-400">Client/Server:</span>  architecture between Controller and Model modules </li>
+                                            <li key={100}><span className="text-blue-400">Model:</span>  contains logic, calculations, and direct PX4 communication </li>
+                                            <li key={101}><span className="text-blue-400">View:</span>  user interface to display data and receive commands from the user </li>
+                                            <li key={102}><span className="text-blue-400">Controller:</span>  processes command data and relays data between Model and View </li>
+                                            <li key={103}><span className="text-blue-400">Client/Server:</span>  architecture between Controller and Model modules </li>
                                         </ul>
                                     </div>
                                     <img
@@ -105,16 +105,16 @@ export default function Projects() {
                                         className="object-cover object-center mb-4 rounded-md"
                                         src={"../images/GCS.png"}
                                     />
-                                    <div className="text-sm lg:text-lg text-gray-400 mb-3">
+                                    <div key="gcs_components" className="text-sm lg:text-lg text-gray-400 mb-3">
                                         <h2 className="title-font font-medium mb-2">The <span className="text-blue-400">Ground Control System (GCS)</span> has seven user interface components:</h2>
                                         <ul className="list-disc pl-5">
-                                            <li>Thruster angle sliders</li>
-                                            <li>Thruster RPM sliders</li>
-                                            <li>Open/close gripper sliders</li>
-                                            <li>Reset State button</li>
-                                            <li>Command Mode dropdown (Single or Multiple)</li>
-                                            <li>Send Commands button</li>
-                                            <li>IMU data display (acceleration and angular speed in x, y, and z directions)</li>
+                                            <li key={104}>Thruster angle sliders</li>
+                                            <li key={105}>Thruster RPM sliders</li>
+                                            <li key={106}>Open/close gripper sliders</li>
+                                            <li key={107}>Reset State button</li>
+                                            <li key={108}>Command Mode dropdown (Single or Multiple)</li>
+                                            <li key={109}>Send Commands button</li>
+                                            <li key={110}>IMU data display (acceleration and angular speed in x, y, and z directions)</li>
                                         </ul>
                                     </div>
                                     <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Electronic System</h2>
@@ -175,7 +175,7 @@ export default function Projects() {
                                     </div>
                                 </div>
                                 : null}
-                            {selectedProject.id === 1 ? selectedProject.testimonials.map((testimonial) => (<p className="text-base text-gray-400 leading-relaxed mb-3">{testimonial}</p>)) : null}
+                            {selectedProject.id === 1 ? selectedProject.testimonials.map((testimonial, index) => (<p key={index + 1000} className="text-base text-gray-400 leading-relaxed mb-3">{testimonial}</p>)) : null}
                             <div className="flex flex-col items-center">
                                 <h2 className="text-md lg:text-xl title-font font-medium text-white mb-3">Repository Link</h2>
                                 <SocialIcon className="items-center" url={selectedProject.link} />

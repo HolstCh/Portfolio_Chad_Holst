@@ -31,6 +31,7 @@ export const projects = [
         link: "https://github.com/HolstCh/UofCMarketplace",
     },
     {
+        id:3,
         title: "Song Genre Prediction",
         subtitle: "Apache Spark and Python",
         description:
@@ -42,6 +43,7 @@ export const projects = [
         link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",
     },
     {
+        id:4,
         title: "Portfolio",
         subtitle: "React and Tailwind CSS",
         description:
