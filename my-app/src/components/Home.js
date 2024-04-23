@@ -16,11 +16,11 @@ const Home = () => {
     return(
         <section id="home">
             <div className="mx-auto flex px-10 py-5 md:flex-row flex-col items-center">
-                <div className="landing-text lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div className="landing-text lg:flex-grow md:w-1/2 w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-xl mb-4 font-medium text-blue-600">
                         Hi, my name is Chad.<br/>
                     </h1>
-                    <TypeAnimation className="title-font sm:text-4xl md:text-l mb-4 font-medium text-gray-800 whitespace-nowrap"
+                    <TypeAnimation className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-800 whitespace-nowrap"
                         sequence={[
                             "I'm a mechanic.",
                             1000,
