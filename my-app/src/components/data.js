@@ -52,61 +52,13 @@ export const projects = [
         alt: "Chad's Portfolio",
         link: "https://github.com/HolstCh/Portfolio_Chad_Holst",
     },
-    {
-        title: "Home Theatre Personal Computer User Interface",
-        subtitle: "HTML/CSS/JS",
-        description:
-            "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify) while practicing User-Centered Design (UCD). The user interface focuses on movies, TV shows, music, and videos. The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
-        summary:
-            "Front-end project that focuses on integrating media content and their corresponding applications",
-        src: "../images/HTPC.jpg",
-        alt: "HTPC UI",
-        link: "https://github.com/HolstCh/HTPC",
-    },
-    {
-        title: "Group Home Data Management System",
-        subtitle: "Python, Flask, MySQL, and HTML/CSS",
-        description:
-            "A web application with a RESTful API that was inspired by the disorganization of my brother's group home workplace. Group homes have many professionals involved; however, the application allows for three professionals to share data involving a youth at risk. The user types are: youth worker, psychologist, and pediatrician. Each user type is able to create a \"document\" which involves inputting data into the user's corresponding HTML form. Every time a document is created, a share code is generated and the user is able to share their document with another user.",
-        summary:
-            "Database design, RESTful API, and web application project that allows for sharing data between professionals in a group home",
-        src: "../images/group_home.jpg",
-        alt: "Group Home Web Application Project",
-        link: "https://github.com/HolstCh/Group-Home-Data-Management-Web-Application",
-        id: 0,
-    },
-    {
-        title: "Professional Forum",
-        subtitle: "Python, Flask, MySQL, and HTML/CSS/JS",
-        description:
-            "This web application was developed to allow professionals to communicate through the use of a forum. The project was inspired by Reddit and LinkedIn. Each user is able to post questions to seek answers regarding problems they are encountering at their workplace. Each user can also search existing questions, post answers to other user's questions, and build their profile (i.e., past projects, companies). The application is currently hosted on PythonAnywhere and the link is in the README of the GitHub repository. ",
-        summary:
-            "Reddit and LinkedIn clone designed for professionals to discuss topics within their domain",
-        src: "../images/forum.png",
-        alt: "forum project",
-        link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
-        id: 0,
-    },
-    {
-        title: "Dots and Boxes Browser Game",
-        subtitle: "JS/HTML/CSS",
-        description:
-            "A three-player game influenced by the classic dots and boxes game. Players take turns clicking on a line to complete square(s). If the player completes a square, then they receive an extra turn. The program uses click handling events to enforce game logic, classes for abstraction, and a grid to identify components.",
-        summary:
-            "Classic game where players compete to draw the most squares by connecting dots",
-        src: "../images/dots.png",
-        alt: "box game project",
-        link: "https://github.com/HolstCh/Dots_Boxes_Game",
-        id: 0,
-    },
 ];
-
 /**
- *   {
+ *       {
  *         title: "Home Theatre Personal Computer User Interface",
  *         subtitle: "HTML/CSS/JS",
  *         description:
- *             "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify) while practicing Task-Centered System Design. The user interface focuses on movies, TV shows, music, and videos. The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
+ *             "A user interface designed to integrate various media content and their corresponding applications (e.g., Netflix and Spotify) while practicing User-Centered Design (UCD). The user interface focuses on movies, TV shows, music, and videos. The interface has a rating system, manages subscriptions, list features, and search/browsing functionalities.",
  *         summary:
  *             "Front-end project that focuses on integrating media content and their corresponding applications",
  *         src: "../images/HTPC.jpg",
@@ -135,6 +87,18 @@ export const projects = [
  *         src: "../images/forum.png",
  *         alt: "forum project",
  *         link: "https://github.com/HolstCh/Professional-Forum-Web-Application-",
+ *         id: 0,
+ *     },
+ *     {
+ *         title: "Dots and Boxes Browser Game",
+ *         subtitle: "JS/HTML/CSS",
+ *         description:
+ *             "A three-player game influenced by the classic dots and boxes game. Players take turns clicking on a line to complete square(s). If the player completes a square, then they receive an extra turn. The program uses click handling events to enforce game logic, classes for abstraction, and a grid to identify components.",
+ *         summary:
+ *             "Classic game where players compete to draw the most squares by connecting dots",
+ *         src: "../images/dots.png",
+ *         alt: "box game project",
+ *         link: "https://github.com/HolstCh/Dots_Boxes_Game",
  *         id: 0,
  *     },
  *     {
