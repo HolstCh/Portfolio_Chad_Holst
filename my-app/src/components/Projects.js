@@ -176,6 +176,36 @@ export default function Projects() {
                                 </div>
                                 : null}
                             {selectedProject.id === 1 ? selectedProject.testimonials.map((testimonial, index) => (<p key={index + 1000} className="text-base text-gray-400 leading-relaxed mb-3">{testimonial}</p>)) : null}
+                            {selectedProject.id === 3 ?
+                                <div key="intents" className="text-sm lg:text-lg title-font font-medium text-gray-400 mb-3">
+                                    <h2 className="text-base text-gray-400 leading-relaxed mb-3">The possible <span className="text-blue-400">intents </span> are the following:</h2>
+                                    <ol className="list-decimal pl-7 mb-3">
+                                        <li key={200}><span className="text-base text-blue-400">who made you</span></li>
+                                        <li key={201}><span className="text-base text-blue-400">meaning of life</span></li>
+                                        <li key={202}><span className="text-base text-blue-400">who do you work for</span></li>
+                                        <li key={203}><span className="text-base text-blue-400">do you have pets</span></li>
+                                        <li key={204}><span className="text-base text-blue-400">what are your hobbies</span></li>
+                                        <li key={205}><span className="text-base text-blue-400">fun fact</span></li>
+                                        <li key={206}><span className="text-base text-blue-400">what is your name</span></li>
+                                        <li key={207}><span className="text-base text-blue-400">where are you from</span></li>
+                                        <li key={208}><span className="text-base text-blue-400">goodbye</span></li>
+                                        <li key={209}><span className="text-base text-blue-400">thank you</span></li>
+                                        <li key={210}><span className="text-base text-blue-400">greeting</span></li>
+                                        <li key={211}><span className="text-base text-blue-400">tell joke</span></li>
+                                        <li key={212}><span className="text-base text-blue-400">are you a bot</span></li>
+                                        <li key={213}><span className="text-base text-blue-400">how old are you</span></li>
+                                        <li key={214}><span className="text-base text-blue-400">what can I ask you</span></li>
+                                        <li key={215}><span className="text-base text-blue-400">oos (out-of-scope)</span></li>
+                                    </ol>
+                                    <p className="text-base text-gray-400 leading-relaxed mb-3">
+                                    The training process involves the use of pre-trained word embeddings (GloVe) and data augmentation. Afterwards, the model is evaluated on validation and test datasets. The following are test set evaluation metrics for the current model: </p>
+                                    <ul className="list-disc pl-5">
+                                        <li key={300} className="text-base"><span className="text-blue-400">Precision:</span> 82.4 %</li>
+                                        <li key={301} className="text-base"><span className="text-blue-400">Accuracy:</span>  80.6 %</li>
+                                        <li key={302} className="text-base"><span className="text-blue-400">Recall:</span>  80.6 %</li>
+                                        <li key={303} className="text-base"><span className="text-blue-400">F1 Score:</span>  80.0 %</li>
+                                    </ul>
+                                </div> : null}
                             <div className="flex flex-col items-center">
                                 <h2 className="text-md lg:text-xl title-font font-medium text-white mb-3">Repository Link</h2>
                                 <SocialIcon className="items-center" url={selectedProject.link} />

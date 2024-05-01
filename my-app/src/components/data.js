@@ -34,10 +34,7 @@ export const projects = [
         id:3,
         title: "NeuraTagger",
         subtitle: "Python, PyTorch, NLTK, Pandas, and Scikit-learn",
-        description: "This project implements a PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture. The model is trained to predict the intent of user text inputs, distinguishing between 16 different classes. 15 classes are in-scope and are related to small talk while 1 class is out-of-scope, determining if a text input is unrelated to small talk intents. The possible intents are the following: \n" +
-            "\"who made you\", \"meaning of life\", \"who do you work for\", \"do you have pets\", \"what are your hobbies\", \"fun fact\", \"what is your name\", \"where are you from\", \"goodbye\", \"thank you\", \"greeting\", \"tell joke\", \"are you a bot\", \"how old are you\", \"what can I ask you\", and \"oos (out-of-scope)\". " +
-            "The training process involves the use of pre-trained word embeddings (GloVe) and data augmentation. Afterwards, the model is evaluated on validation and test datasets. The following are test set evaluation metrics for the current model:\n" +
-            "Precision (82.4 %), Accuracy (80.6 %), Recall (80.6 %), and F1 Score (80.0 %)",
+        description: "This project implements a PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture. The model is trained to predict the intent of user text inputs, distinguishing between 16 different classes. 15 classes are in-scope and are related to small talk while 1 class is out-of-scope, determining if a text input is unrelated to small talk intents.",
         summary: "PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture.",
         src: "../images/NeuraTagger.png",
         alt: "Intent Classification Model",
@@ -45,18 +42,6 @@ export const projects = [
     },
     {
         id:4,
-        title: "Song Genre Prediction",
-        subtitle: "Apache Spark and Python",
-        description:
-            "This Jupyter notebook implemented and compared various machine learning models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
-        summary:
-            "Jupyter notebook that utilizes sentiment analysis and machine learning to predict if a song is pop or rap",
-        src: "../images/ML_Models.jpg",
-        alt: "Genre Prediction",
-        link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",
-    },
-    {
-        id:5,
         title: "Portfolio",
         subtitle: "React and Tailwind CSS",
         description:
@@ -66,6 +51,18 @@ export const projects = [
         src: "../images/portfolio.jpg",
         alt: "Chad's Portfolio",
         link: "https://github.com/HolstCh/Portfolio_Chad_Holst",
+    },
+    {
+        id:5,
+        title: "Song Genre Prediction",
+        subtitle: "Apache Spark and Python",
+        description:
+            "This Jupyter notebook implemented and compared various machine learning models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
+        summary:
+            "Jupyter notebook that utilizes sentiment analysis and machine learning to predict if a song is pop or rap",
+        src: "../images/ML_Models.jpg",
+        alt: "Genre Prediction",
+        link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",
     },
     {
         id:6,
@@ -80,6 +77,7 @@ export const projects = [
         link: "https://github.com/HolstCh/Group-Home-Data-Management-Web-Application",
     },
 ];
+
 /**
  *       {
  *         title: "Home Theatre Personal Computer User Interface",
