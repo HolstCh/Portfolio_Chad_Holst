@@ -35,7 +35,7 @@ export const projects = [
         title: "NeuraTagger",
         subtitle: "Python, PyTorch, NLTK, Pandas, and Scikit-learn",
         description: "This project implements a PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP). Intent classifiers can enhance Large Language Models (LLMs) by helping models: understand user input, generate contextually relevant responses, maintain conversational flow, handle multiturn dialogues, and filter inputs. This model is trained to predict the intent of user text inputs, distinguishing between 16 different classes. 15 classes are in-scope and are related to small talk while 1 class is out-of-scope, determining if a text input is unrelated to small talk intents.",
-        summary: "PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP).",
+        summary: "PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP)",
         src: "../images/NeuraTagger.png",
         alt: "Intent Classification Model",
         link: "https://github.com/HolstCh/NeuraTagger",
