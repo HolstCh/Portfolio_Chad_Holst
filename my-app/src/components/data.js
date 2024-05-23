@@ -53,18 +53,6 @@ export const projects = [
         link: "https://github.com/HolstCh/Portfolio_Chad_Holst",
     },
     {
-        id:5,
-        title: "Song Genre Prediction",
-        subtitle: "Apache Spark and Python",
-        description:
-            "This Jupyter notebook implemented and compared various machine learning models for predicting whether a song is pop or rap (binary classification). The project utilizes sentiment analysis (AFINN) to facilitate training each model. The model types we evaluated are Logistic Regression, Decision Tree, Random Forest and Gradient Boosted Trees (GBT). We evaluated each model using accuracy, precision, recall, f-score, and AUC-ROC metrics.",
-        summary:
-            "Jupyter notebook that utilizes sentiment analysis and machine learning to predict if a song is pop or rap",
-        src: "../images/ML_Models.jpg",
-        alt: "Genre Prediction",
-        link: "https://github.com/HolstCh/ML-Models-for-Genre-Prediction",
-    },
-    {
         id:6,
         title: "Group Home Data Management System",
         subtitle: "Python, Flask, MySQL, and HTML/CSS",
