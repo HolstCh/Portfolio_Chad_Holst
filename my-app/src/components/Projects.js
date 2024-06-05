@@ -7,6 +7,15 @@ import "../styles/Projects.css";
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [hoveredProjectId, setHoveredProjectId] = useState(null);
+
+    const handleMouseEnter = (projectId) => {
+        setHoveredProjectId(projectId);
+    }
+
+    const handleMouseLeave = () => {
+        setHoveredProjectId(null);
+    }
 
     const handleClick = (project) => {
         setSelectedProject(project);
@@ -37,14 +46,18 @@ export default function Projects() {
                             onClick={() => handleClick(project)}
                         >
                             <div className="relative">
-                                <div className="overlay-text absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900">
-                                    <h1 className="title-font lg:text-2xl text-xl font-medium text-white mb-3">
+                                <div
+                                    className="overlay-text absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900"
+                                    onMouseEnter={() => handleMouseEnter(project.id)}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <h1 className={`title-font lg:text-2xl text-xl font-medium mb-3 ${hoveredProjectId === project.id ? 'text-blue-600' : 'text-white'}`}>
                                         {project.title}
                                     </h1>
-                                    <h2 className="text-md lg:text-lg title-font font-medium text-blue-400 mb-3">
+                                    <h2 className={`text-md lg:text-lg title-font font-medium mb-3 ${hoveredProjectId === project.id ? 'text-gray-600' : 'text-blue-400'}`}>
                                         {project.subtitle}
                                     </h2>
-                                    <h2 className="text-sm lg:text-lg title-font font-medium text-gray-400">
+                                    <h2 className={`text-sm lg:text-lg title-font font-medium ${hoveredProjectId === project.id ? 'text-blue-600' : 'text-gray-400'}`}>
                                         {project.summary}
                                     </h2>
                                 </div>
