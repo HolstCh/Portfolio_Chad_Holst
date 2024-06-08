@@ -45,9 +45,9 @@ export const projects = [
         title: "Portfolio",
         subtitle: "React and Tailwind CSS",
         description:
-            "My personal website that was implemented to showcase some of my software projects. I purchased a domain and hosted the website using Vercel. The website utilizes an API (EmailJS) to receive emails from potential employers and is mobile-responsive.",
+            "My personal website that was implemented to showcase some of my software projects. I purchased a domain and created a CI/CD pipeline with GitHub Actions and Vercel. The website utilizes an API (EmailJS) to receive emails from potential employers and is mobile-responsive.",
         summary:
-            "Responsive personal website that is currently being used to view a sample of my software projects",
+            "Responsive personal website that uses EmailJS API and CI/CD pipeline",
         src: "../images/portfolio.jpg",
         alt: "Chad's Portfolio",
         link: "https://github.com/HolstCh/Portfolio_Chad_Holst",
