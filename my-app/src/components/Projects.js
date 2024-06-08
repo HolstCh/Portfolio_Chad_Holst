@@ -1,5 +1,5 @@
 import { FolderIcon } from "@heroicons/react/20/solid";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { SocialIcon } from 'react-social-icons';
 import { projects } from "./data";
 import "../styles/width.css";
@@ -8,6 +8,20 @@ import "../styles/Projects.css";
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [hoveredProjectId, setHoveredProjectId] = useState(null);
+    const [isOverlayClosing, setIsOverlayClosing] = useState(false);
+    const [areImagesLoaded, setAreImagesLoaded] = useState(false);
+
+    useEffect(() => {
+        if (selectedProject) {
+            const img = new Image();
+            img.src = selectedProject.src;
+            img.onload = handleImageLoad;
+        }
+    }, [selectedProject]);
+
+    const handleImageLoad = () => {
+        setAreImagesLoaded(true);
+    };
 
     const handleMouseEnter = (projectId) => {
         setHoveredProjectId(projectId);
@@ -15,14 +29,19 @@ export default function Projects() {
 
     const handleMouseLeave = () => {
         setHoveredProjectId(null);
-    }
+    };
 
     const handleClick = (project) => {
         setSelectedProject(project);
+        setAreImagesLoaded(false);
     };
 
     const handleCloseOverlay = () => {
-        setSelectedProject(null);
+        setIsOverlayClosing(true);
+        setTimeout(() => {
+            setIsOverlayClosing(false);
+            setSelectedProject(null);
+        }, 300);
     };
 
     return (
@@ -66,8 +85,8 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            {selectedProject && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+            {selectedProject && areImagesLoaded && (
+                <div className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 ${isOverlayClosing ? 'animate-shrink' : 'animate-expand'}`}>
                     <div className="bg-gray-900 p-8 rounded-md max-w-3xl w-full h-full overflow-y-auto relative">
                         <button
                             className="absolute top-2 right-2 bg-red-700 hover:bg-red-600 px-2.5 text-white rounded hover:text-slate-800 cursor-pointer text-2xl"
