@@ -1,4 +1,4 @@
-name: Portfolio CI tests
+name: Portfolio CI tests workflow
 
 on:
   push:
