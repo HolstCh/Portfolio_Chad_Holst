@@ -48,22 +48,6 @@ describe('Contact Unit Tests', () => {
         expect(screen.getByText(/Please provide a message!/i)).toBeInTheDocument();
     });
 
-    test('calls emailjs.sendForm on successful form submission', async () => {
-        emailjs.sendForm.mockResolvedValue({ status: 200 });
-
-        render(<Contact />);
-
-        fireEvent.change(screen.getByLabelText(/Name/i), { target: { value: 'John Smith' } });
-        fireEvent.change(screen.getByLabelText(/Email/i), { target: { value: 'john.smith@outlook.com' } });
-        fireEvent.change(screen.getByLabelText(/Message/i), { target: { value: 'Hello!' } });
-
-        await act(async () => {
-            fireEvent.click(screen.getByText(/Send/i));
-        });
-
-        expect(emailjs.sendForm).toHaveBeenCalledTimes(1);
-    });
-
     test('displays success message on successful form submission', async () => {
         emailjs.sendForm.mockResolvedValue({ status: 200 });
 
@@ -80,3 +64,21 @@ describe('Contact Unit Tests', () => {
         await screen.findByText(/Thank you John Smith, your message was sent successfully!/i);
     });
 });
+
+describe("Contact Integration Tests", () => {
+    test('calls emailjs.sendForm on successful form submission', async () => {
+        emailjs.sendForm.mockResolvedValue({ status: 200 });
+
+        render(<Contact />);
+
+        fireEvent.change(screen.getByLabelText(/Name/i), { target: { value: 'John Smith' } });
+        fireEvent.change(screen.getByLabelText(/Email/i), { target: { value: 'john.smith@outlook.com' } });
+        fireEvent.change(screen.getByLabelText(/Message/i), { target: { value: 'Hello!' } });
+
+        await act(async () => {
+            fireEvent.click(screen.getByText(/Send/i));
+        });
+
+        expect(emailjs.sendForm).toHaveBeenCalledTimes(1);
+    });
+})
