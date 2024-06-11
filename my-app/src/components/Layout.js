@@ -1,6 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
+import {Outlet, Link, useLocation} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import {useEffect, useState} from "react";
 
 const Layout = () => {
+    const location = useLocation();
+    const [inProp, setInProp] = useState(false);
+
+    useEffect(() => {
+        setInProp(true);
+        const timeoutId = setTimeout(() => setInProp(false), 300);
+        return () => clearTimeout(timeoutId);
+    }, [location]);
+
     return (
         <>
             <header>
@@ -21,7 +32,20 @@ const Layout = () => {
                     </nav>
                 </div>
             </header>
-            <Outlet />
+            <TransitionGroup component={null}>
+                <CSSTransition
+                    key={location.key}
+                    timeout={300}
+                    classNames="slide"
+                    in={inProp}
+                    onEntered={() => setInProp(false)}
+                    unmountOnExit
+                >
+                <div className="page">
+                    <Outlet />
+                </div>
+                </CSSTransition>
+            </TransitionGroup>
         </>
     )
 };

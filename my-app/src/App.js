@@ -10,12 +10,13 @@ function App() {
 
   return (
       <>
-        <Layout/>
         <div className="bg-white">
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="projects" element={<Projects />} />
-                <Route path="contact" element={<Contact />} />
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="projects" element={<Projects />} />
+                    <Route path="contact" element={<Contact />} />
+                </Route>
             </Routes>
         </div>
       </>
