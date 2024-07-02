@@ -1,5 +1,25 @@
 export const projects = [
     {
+        id:7,
+        title: "WordPal",
+        subtitle: "ASP.Net Core 8, React, Tailwind CSS, SQL Server, and Entity Framework",
+        summary: "Chat web application integrating Meta’s Llama 3 text generation model with innovative pinned messages",
+        description: "WordPal is a chat web application that integrates Meta’s Llama 3 model to generate interactive conversations. It’s designed with a focus on user experience, featuring an implementation of pinned messages for efficient retrieval of past responses and conversations. It uses a custom API to generate text based on user input. The application is built with a robust backend architecture using ASP.NET Core 8 and uses Entity Framework for data access. The backend is designed with various services and controllers, each serving a specific purpose such as managing users, conversations, and messages.",
+        src: "../images/chat_interface.png",
+        alt: "Chat App",
+        link: "https://github.com/HolstCh/WordPal",
+    },
+    {
+        id:3,
+        title: "NeuraTagger",
+        subtitle: "Python, PyTorch, NLTK, Pandas, and Scikit-learn",
+        description: "This project implements a PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP). Intent classifiers can enhance Large Language Models (LLMs) by helping models: understand user input, generate contextually relevant responses, maintain conversational flow, handle multiturn dialogues, and filter inputs. This model is trained to predict the intent of user text inputs, distinguishing between 16 different classes. 15 classes are in-scope and are related to small talk while 1 class is out-of-scope, determining if a text input is unrelated to small talk intents.",
+        summary: "PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP)",
+        src: "../images/NeuraTagger.png",
+        alt: "Intent Classification Model",
+        link: "https://github.com/HolstCh/NeuraTagger",
+    },
+    {
         id: 1,
         testimonials: ["\"Chad is hardworking, reliable, and a very talented engineer. He has a calm and confident\n" +
         "demeanour and he was an absolute pleasure to work with. He is the definition of a great\n" +
@@ -29,16 +49,6 @@ export const projects = [
         src: "../images/buy.png",
         alt: "Marketplace Web Application Project",
         link: "https://github.com/HolstCh/UofCMarketplace",
-    },
-    {
-        id:3,
-        title: "NeuraTagger",
-        subtitle: "Python, PyTorch, NLTK, Pandas, and Scikit-learn",
-        description: "This project implements a PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP). Intent classifiers can enhance Large Language Models (LLMs) by helping models: understand user input, generate contextually relevant responses, maintain conversational flow, handle multiturn dialogues, and filter inputs. This model is trained to predict the intent of user text inputs, distinguishing between 16 different classes. 15 classes are in-scope and are related to small talk while 1 class is out-of-scope, determining if a text input is unrelated to small talk intents.",
-        summary: "PyTorch-powered Intent Classification model using a Long Short-Term Memory (LSTM) neural network architecture and Natural Language Processing (NLP)",
-        src: "../images/NeuraTagger.png",
-        alt: "Intent Classification Model",
-        link: "https://github.com/HolstCh/NeuraTagger",
     },
     {
         id:4,
