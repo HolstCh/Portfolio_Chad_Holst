@@ -43,11 +43,3 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: --prod
-
-      - name: Update deployment status (success)
-        if: ${{ success() }}
-        uses: bloodf/github-deploy-status@v1
-        with:
-          environment-url: 'https://www.chadsportfolio.ca/'
-          state: 'success'
-          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
