@@ -5,7 +5,7 @@ import App from './App';
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 
-// checks routes within App component
+// checks components within App component
 describe('App Unit Tests', () => {
 
   test('renders home page', () => {
@@ -14,7 +14,7 @@ describe('App Unit Tests', () => {
           <App />
         </BrowserRouter>
     );
-    expect(screen.getByText('Hi, my name is Chad.')).toBeInTheDocument();
+    expect(screen.getByText('John')).toBeInTheDocument();
   });
 
   test('renders projects page', () => {
