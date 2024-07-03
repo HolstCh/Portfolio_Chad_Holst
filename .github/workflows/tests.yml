@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
@@ -27,3 +27,27 @@ jobs:
       - name: Run tests
         run: npm test a
         working-directory: my-app
+
+      - name: Build project
+        if: ${{ success() }}
+        run: npm run build
+        working-directory: my-app
+
+      - name: Deploy to Vercel
+        if: ${{ success() }}
+        id: deployment
+        uses: amondnet/vercel-action@v20
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: --prod
+
+      - name: Update deployment status (success)
+        if: ${{ success() }}
+        uses: bloodf/github-deploy-status@v1
+        with:
+          environment-url: 'https://www.chadsportfolio.ca/'
+          state: 'success'
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
