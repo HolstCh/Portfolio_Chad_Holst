@@ -14,7 +14,7 @@ describe('App Unit Tests', () => {
           <App />
         </BrowserRouter>
     );
-    expect(screen.getByText('John')).toBeInTheDocument();
+    expect(screen.getByText('Hi, my name is Chad.')).toBeInTheDocument();
   });
 
   test('renders projects page', () => {
