@@ -6,10 +6,8 @@ import "../styles/NavBar.css";
 import "../styles/Home.css"
 import "../styles/width.css"
 import React from "react";
-import {Cog6ToothIcon, LightBulbIcon, AcademicCapIcon} from "@heroicons/react/20/solid";
+import {Cog6ToothIcon, AcademicCapIcon} from "@heroicons/react/20/solid";
 import { TypeAnimation } from 'react-type-animation';
-import PhotoGallery from "./photoGallery";
-import {photos} from "./photos";
 
 const Home = () => {
 
@@ -75,7 +73,7 @@ const Home = () => {
                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">
                     Skills
                 </h1>
-                <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-black">
+                <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center ext-gray-400">
                     My past experiences have provided opportunities to learn the following technologies
                 </p>
             </div>
