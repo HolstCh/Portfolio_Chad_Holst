@@ -20,15 +20,11 @@ const Home = () => {
                     </h1>
                     <TypeAnimation className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-800 whitespace-nowrap"
                         sequence={[
-                            "I'm a mechanic.",
+                            "I'm a DevOps & Web Developer.",
                             1000,
-                            "I'm a software developer.",
+                            "I build & use AI-powered Tech.",
                             1000,
-                            "I'm a design enthusiast.",
-                            1000,
-                            "I'm an engineering graduate.",
-                            1000,
-                            "I'm a creative problem-solver.",
+                            "I'm a Mechanic turned Engineer.",
                             1000,
                         ]}
                         wrapper="span"
@@ -39,7 +35,7 @@ const Home = () => {
                         Welcome to my coding journey.<br/>
                     </h1>
                     <p className="text-gray-500 mb-8 sm:text-xl leading-relaxed text-l md:w-full w-7/8">
-                        Starting in the heavy equipment industry, I have transitioned into the captivating world of software engineering. My work experience has honed my problem-solving abilities, collaborative skill set, and keen eye for detail; while my education has instilled in me a results-driven and analytical approach. Such qualities facilitate my commitment to crafting robust software solutions while improving lives within society. I'm eager to join a new team that values quality, creativity, and learning. If our values align, let's thrive together!
+                        From troubleshooting engines to building digital systems, I bring a reliability-first mindset to DevOps and Web Development. I am focused on building and integrating AI-powered solutions, bridging the gap between stable infrastructure and intelligent automation. I’m eager to join a team that values quality, creativity, and continuous learning. If our values align, let's thrive together!
                     </p>
                     <div className="flex md:flex-row flex-col lg:flex-row justify-center items-center text-lg">
                         <a
