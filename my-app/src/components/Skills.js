@@ -4,12 +4,11 @@ import React from 'react'
 import Skill from './Skill';
 
 // icons for skills
-import { FaPython, FaReact, FaNodeJs, FaCss3, FaJava, FaLinux, FaJenkins } from "react-icons/fa";
+import { FaPython, FaReact, FaNodeJs, FaCss3, FaDocker, FaJava, FaLinux, FaJenkins } from "react-icons/fa";
 import { BiLogoFlask } from "react-icons/bi"
 import { AiOutlineHtml5, AiOutlineGithub } from "react-icons/ai";
 import { IoLogoGitlab } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
-import { DiDocker } from "react-icons/di";
 import { SiElasticsearch, SiTailwindcss, SiCplusplus, SiJavascript, SiJfrog, SiAnsible, SiGrafana } from "react-icons/si";
 
 export default function Skills() {
@@ -33,7 +32,7 @@ export default function Skills() {
             <Skill label={"Git/Github"} icon={<AiOutlineGithub color="black" size={65} />}/>
             <Skill label={"GitLab CI/CD"} icon={<IoLogoGitlab color="blue" size={65} />}/>
             <Skill label={"Ansible"} icon={<SiAnsible color="black" size={65} />}/>
-            <Skill label={"Docker"} icon={<DiDocker color="blue" size={65} />}/>
+            <Skill label={"Docker"} icon={<FaDocker color="blue" size={65} />}/>
             <Skill label={"Grafana"} icon={<SiGrafana color="black" size={65} />}/>
         </ul>
     )
