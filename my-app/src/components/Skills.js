@@ -10,7 +10,7 @@ import { AiOutlineHtml5, AiOutlineGithub } from "react-icons/ai";
 import { IoLogoGitlab } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
 import { DiDocker } from "react-icons/di";
-import { SiElasticsearch, SiTailwindcss, SiCplusplus, SiJavascript, SiJfrog, SiApachespark, SiAnsible, SiGrafana } from "react-icons/si";
+import { SiElasticsearch, SiTailwindcss, SiCplusplus, SiJavascript, SiJfrog, SiAnsible, SiGrafana } from "react-icons/si";
 
 export default function Skills() {
     return(
