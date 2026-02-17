@@ -102,6 +102,24 @@ export default function Projects() {
                             className="object-cover object-center mb-4 rounded-md"
                             src={selectedProject.src}
                         />
+                        {selectedProject.id === 8 ?
+                        <div>
+                        <img
+                            alt={selectedProject.alt}
+                            className="object-cover object-center mb-4 rounded-md"
+                            src={"../images/pipelines.png"}
+                        />
+                        <img
+                            alt={selectedProject.alt}
+                            className="object-cover object-center mb-4 rounded-md"
+                            src={"../images/stages.png"}
+                        />
+                        <img
+                            alt={selectedProject.alt}
+                            className="object-cover object-center mb-4 rounded-md"
+                            src={"../images/jobs.png"}
+                        />
+                        </div> : null}
                         <div>
                             {selectedProject.id === 2 ?
                                 <div className="items-center flex flex-col py-2">
@@ -238,10 +256,11 @@ export default function Projects() {
                                         <li key={303} className="text-base"><span className="text-blue-400">F1 Score:</span>  80.0 %</li>
                                     </ul>
                                 </div> : null}
+                            {selectedProject.id !== 8 ?
                             <div className="flex flex-col items-center">
                                 <h2 className="text-md lg:text-xl title-font font-medium text-white mb-3">Repository Link</h2>
                                 <SocialIcon className="items-center" url={selectedProject.link} />
-                            </div>
+                            </div> : null}
                         </div>
                     </div>
                 </div>

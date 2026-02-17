@@ -1,6 +1,7 @@
 import developer from "../developer.svg"
 import Skills from "./Skills"
 import Courses from "./Courses"
+import WorkExperience from "./WorkExperience";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import "../styles/Home.css"
@@ -64,6 +65,7 @@ const Home = () => {
                     />
                 </div>
             </div>
+            <WorkExperience />
             <div className="responsive-width landing-text mx-auto flex px-10 py-5 flex-col md:flex-col lg:flex-col items-center">
                 <Cog6ToothIcon className="mx-auto inline-block w-10 mb-4 text-gray-400" />
                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-black">

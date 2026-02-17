@@ -1,5 +1,15 @@
 export const projects = [
     {
+        id:8,
+        title: "GitLab Pipeline Monitoring Dashboard",
+        subtitle: "Python, GitLab API, GitLab CI/CD, Grafana, and Elasticsearch",
+        summary: "Grafana dashboard and Python ETL program",
+        description: "Designed a Python-based ETL program to ingest GitLab CI/CD metrics into Elasticsearch, processing ~30 pipelines per day. Built an interactive Grafana dashboard to visualize failure rates, root causes, execution durations, and problematic branches. The python ETL program extracts pipeline and job data from the GitLab API, transforms it into detailed metrics, and loads the results into Elasticsearch, organizing data into automatic monthly indices for data management/efficiency. The modular design maps each Python file (e.g., jobs.py, stages.py, and pipelines.py) to a corresponding Elasticsearch document type to promote maintainability. The program also supports backfill processing by date range and custom aggregate logic for stage analytics. To sum it up, the project provides insights into CI/CD performance and reliability.",
+        src: "../images/overview_dashboard.png",
+        alt: "Dashboard",
+        link: "https://github.com/HolstCh",
+    },
+    {
         id:7,
         title: "WordPal",
         subtitle: "ASP.Net Core 8, React, Tailwind CSS, SQL Server, and Entity Framework",
