@@ -96,30 +96,18 @@ export default function Projects() {
                         </button>
                         <h1 className="lg:text-3xl text-xl font-semibold text-center text-white">{selectedProject.title}</h1>
                         <h2 className="text-md lg:text-lg title-font font-medium text-center text-blue-400 mb-3">{selectedProject.subtitle}</h2>
+                        {selectedProject.id === 8 ?
+                        <div>
+                            <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Overview Section</h2>
+                            <p className="text-base text-gray-400 leading-relaxed mb-3">{selectedProject.descriptionOverview}</p>
+                        </div>
+                        : null}
                         {selectedProject.id === 2 ? <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Buy Page</h2> : null }
                         <img
                             alt={selectedProject.alt}
                             className="object-cover object-center mb-4 rounded-md"
                             src={selectedProject.src}
                         />
-                        {selectedProject.id === 8 ?
-                        <div>
-                        <img
-                            alt={selectedProject.alt}
-                            className="object-cover object-center mb-4 rounded-md"
-                            src={"../images/pipelines.png"}
-                        />
-                        <img
-                            alt={selectedProject.alt}
-                            className="object-cover object-center mb-4 rounded-md"
-                            src={"../images/stages.png"}
-                        />
-                        <img
-                            alt={selectedProject.alt}
-                            className="object-cover object-center mb-4 rounded-md"
-                            src={"../images/jobs.png"}
-                        />
-                        </div> : null}
                         <div>
                             {selectedProject.id === 2 ?
                                 <div className="items-center flex flex-col py-2">
@@ -133,6 +121,33 @@ export default function Projects() {
                                 : null}
                             <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Project Description</h2>
                             <p className="text-base text-gray-400 leading-relaxed mb-3">{selectedProject.description}</p>
+                            {selectedProject.id === 8 ?
+                            <div>
+                                <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Pipelines</h2>
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The pipelines section focuses on average durations with or without job retries. 
+                                    It also displays the trends of failure rates. Additionally, the panels count the total successful, failed, and aborted pipelines and a daily state results histogram.</p>
+                                <img
+                                    alt={selectedProject.alt}
+                                    className="object-cover object-center mb-4 rounded-md"
+                                    src={"../images/pipelines.png"}
+                                />
+                                <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Stages</h2>
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The stages section displays heatmaps of failure rates and average durations. 
+                                    The sections also has a bar graph to display stages with highest retry durations and a histogram for stage bottlenecks. </p>
+                                <img
+                                    alt={selectedProject.alt}
+                                    className="object-cover object-center mb-4 rounded-md"
+                                    src={"../images/stages.png"}
+                                />
+                                <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Jobs</h2>
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The jobs section displays a histogram to determine when and how infrastructure 
+                                    failures occurred and a clickable table that directs you to the job on GitLab. The sections also tracks failure counts and the overall average duration of each job. </p>
+                                <img
+                                    alt={selectedProject.alt}
+                                    className="object-cover object-center mb-4 rounded-md"
+                                    src={"../images/jobs.png"}
+                                />
+                            </div> : null}
                             {selectedProject.id === 1 ?
                                 <div>
                                     <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Software System</h2>

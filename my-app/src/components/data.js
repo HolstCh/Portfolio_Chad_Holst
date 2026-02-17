@@ -8,6 +8,7 @@ export const projects = [
         src: "../images/overview_dashboard.png",
         alt: "Dashboard",
         link: "https://github.com/HolstCh",
+        descriptionOverview: "The overview section is the start of the dashboard which is filterable by status, branch, and project. It displays the overall average pipeline with/without retries, average queue time, and success rate. The section also shows the stages and jobs with the highest failure rates and displays them in descending order. Next, a pie chart to show if the failures are from infrastructure or developer. Lastly, bar graphs to highlight branches with most failures and highest failure rates."
     },
     {
         id:7,
