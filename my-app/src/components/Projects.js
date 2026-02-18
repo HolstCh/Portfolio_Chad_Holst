@@ -133,7 +133,7 @@ export default function Projects() {
                                 />
                                 <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Stages</h2>
                                 <p className="text-base text-gray-400 leading-relaxed mb-3">The "Stages" section displays heatmaps of failure rates and average durations. 
-                                    The sections also has a bar graph to display stages with highest retry durations and a histogram for stage bottlenecks. </p>
+                                    The section also has a bar graph to display stages with highest retry durations and a histogram for target stage bottlenecks. </p>
                                 <img
                                     alt={selectedProject.alt}
                                     className="object-cover object-center mb-4 rounded-md"
