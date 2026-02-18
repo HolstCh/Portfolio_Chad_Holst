@@ -8,7 +8,26 @@ export const projects = [
         src: "../images/overview_dashboard.png",
         alt: "Dashboard",
         link: "https://github.com/HolstCh",
-        descriptionOverview: "The overview section is the start of the dashboard which is filterable by status, branch, and project. It displays the overall average pipeline with/without retries, average queue time, and success rate. The section also shows the stages and jobs with the highest failure rates and displays them in descending order. Next, a pie chart to show if the failures are from infrastructure or developer. Lastly, bar graphs to highlight branches with most failures and highest failure rates."
+        descriptionOverview: "The \"Overview\" section is the start of the dashboard which is filterable by status, branch, and project. It displays the overall average pipeline duration with/without retries, average queue time, and success rate. The section also shows the stages and jobs with the highest failure rates and displays each corresponding stage/job in descending order. Next, a pie chart to explain if the job failures are from infrastructure or developer. Lastly, bar graphs to highlight branches with most failures and highest failure rates."
+    },
+    {
+        id: 1,
+        testimonials: ["\"Chad is hardworking, reliable, and a very talented engineer. He has a calm and confident\n" +
+        "demeanour and he was an absolute pleasure to work with. He is the definition of a great\n" +
+        "team member and an asset to the success of the project.\"", "\"Chad's drive to seek and learn was inspiring and motivated me to do the same, his\n" +
+        "communication was rock solid and helped the group understand the tasks he was\n" +
+        "progressing on.\"", "\"Excellent job in developing and maintaining the hardware and software required for the\n" +
+        "project! This is extremely important and made our integration go very well. I can't stress\n" +
+        "how important you were to this project.\"\n", "\"MVP of the project. Great last minute addition. Couldn't have done it without you.\""],
+        title: "Unmanned Underwater Vehicle",
+        subtitle: "Python, Pymavlink, Drone Prototype, and Electronics",
+        description:
+            "This research project involves designing and implementing a software/hardware integration to provide control for a drone prototype. Our team successfully integrated various electronic components and developed software to control the underwater drone. We had developed a GUI using Python that is capable of communicating with a Raspberry Pi and PX4 flight controller to send commands and read movement data. The project consists of a GUI, a Raspberry Pi 3 Model B, Pixhawk 4 autopilot, a drone prototype, and other various electronics.",
+        summary:
+            "GUI that integrates electronics for a drone prototype using the MAVlink protocol",
+        src: "../images/drone.jpg",
+        alt: "Drone Control Project",
+        link: "https://github.com/HolstCh/Unmanned_Underwater_Vehicle",
     },
     {
         id:7,
@@ -29,25 +48,6 @@ export const projects = [
         src: "../images/NeuraTagger.png",
         alt: "Intent Classification Model",
         link: "https://github.com/HolstCh/NeuraTagger",
-    },
-    {
-        id: 1,
-        testimonials: ["\"Chad is hardworking, reliable, and a very talented engineer. He has a calm and confident\n" +
-        "demeanour and he was an absolute pleasure to work with. He is the definition of a great\n" +
-        "team member and an asset to the success of the project.\"", "\"Chad's drive to seek and learn was inspiring and motivated me to do the same, his\n" +
-        "communication was rock solid and helped the group understand the tasks he was\n" +
-        "progressing on.\"", "\"Excellent job in developing and maintaining the hardware and software required for the\n" +
-        "project! This is extremely important and made our integration go very well. I can't stress\n" +
-        "how important you were to this project.\"\n", "\"MVP of the project. Great last minute addition. Couldn't have done it without you.\""],
-        title: "Unmanned Underwater Vehicle",
-        subtitle: "Python, Pymavlink, Drone Prototype, and Electronics",
-        description:
-            "This research project involves designing and implementing a software/hardware integration to provide control for a drone prototype. Our team successfully integrated various electronic components and developed software to control the underwater drone. We had developed a GUI using Python that is capable of communicating with a Raspberry Pi and PX4 flight controller to send commands and read movement data. The project consists of a GUI, a Raspberry Pi 3 Model B, Pixhawk 4 autopilot, a drone prototype, and other various electronics.",
-        summary:
-            "GUI that integrates electronics for a drone prototype using the MAVlink protocol",
-        src: "../images/drone.jpg",
-        alt: "Drone Control Project",
-        link: "https://github.com/HolstCh/Unmanned_Underwater_Vehicle",
     },
     {
         id:2,

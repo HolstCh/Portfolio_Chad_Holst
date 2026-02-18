@@ -124,7 +124,7 @@ export default function Projects() {
                             {selectedProject.id === 8 ?
                             <div>
                                 <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Pipelines</h2>
-                                <p className="text-base text-gray-400 leading-relaxed mb-3">The pipelines section focuses on average durations with or without job retries. 
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The "Pipelines" section focuses on average durations with or without job retries. 
                                     It also displays the trends of failure rates. Additionally, the panels count the total successful, failed, and aborted pipelines and a daily state results histogram.</p>
                                 <img
                                     alt={selectedProject.alt}
@@ -132,7 +132,7 @@ export default function Projects() {
                                     src={"../images/pipelines.png"}
                                 />
                                 <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Stages</h2>
-                                <p className="text-base text-gray-400 leading-relaxed mb-3">The stages section displays heatmaps of failure rates and average durations. 
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The "Stages" section displays heatmaps of failure rates and average durations. 
                                     The sections also has a bar graph to display stages with highest retry durations and a histogram for stage bottlenecks. </p>
                                 <img
                                     alt={selectedProject.alt}
@@ -140,8 +140,8 @@ export default function Projects() {
                                     src={"../images/stages.png"}
                                 />
                                 <h2 className="text-md lg:text-xl title-font font-medium text-center text-white mb-3">Jobs</h2>
-                                <p className="text-base text-gray-400 leading-relaxed mb-3">The jobs section displays a histogram to determine when and how infrastructure 
-                                    failures occurred and a clickable table that directs you to the job on GitLab. The sections also tracks failure counts and the overall average duration of each job. </p>
+                                <p className="text-base text-gray-400 leading-relaxed mb-3">The "Jobs" section displays a histogram to determine when and how infrastructure 
+                                    failures occurred and a clickable table that directs you to the job on GitLab. The section also tracks failure counts and the overall average duration of each job. </p>
                                 <img
                                     alt={selectedProject.alt}
                                     className="object-cover object-center mb-4 rounded-md"

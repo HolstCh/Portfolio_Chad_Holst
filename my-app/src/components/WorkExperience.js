@@ -75,7 +75,7 @@ export default function WorkExperience() {
           Work Experience
         </h1>
         <p className="projects-text lg:w-2/3 sm:text-xl mx-auto leading-relaxed text-base text-l text-center text-gray-400">
-          Quick fields to fill in your roles, dates, and impact bullets.
+          My employment history that has been essential to my software engineering journey
         </p>
       </div>
 
@@ -93,36 +93,36 @@ export default function WorkExperience() {
 
         <div className="space-y-6">
           {entries.map((e, idx) => (
-            <div key={idx} className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+            <div key={idx} className="rounded-xl border-4 border-gray-800 bg-white p-5 shadow-sm">
               <div className="flex items-start justify-between gap-4">
                 <div className="grid w-full grid-cols-1 gap-3 md:grid-cols-2">
                   <input
-                    className="w-full rounded-md border border-gray-200 p-2"
+                    className="w-full rounded-md border-2 border-blue-600 p-4"
                     placeholder="Company (e.g., Acme Inc.)"
                     value={e.company}
                     onChange={(ev) => updateEntry(idx, "company", ev.target.value)}
                   />
                   <input
-                    className="w-full rounded-md border border-gray-200 p-2"
+                    className="w-full rounded-md border-2 border-blue-600 p-4"
                     placeholder="Role / Title (e.g., Frontend Developer)"
                     value={e.title}
                     onChange={(ev) => updateEntry(idx, "title", ev.target.value)}
                   />
                   <input
-                    className="w-full rounded-md border border-gray-200 p-2"
+                    className="w-full rounded-md border-2 border-blue-600 p-2"
                     placeholder="Location (e.g., Calgary, AB)"
                     value={e.location}
                     onChange={(ev) => updateEntry(idx, "location", ev.target.value)}
                   />
                   <div className="grid grid-cols-2 gap-3">
                     <input
-                      className="w-full rounded-md border border-gray-200 p-2"
+                      className="w-full rounded-md border-2 border-blue-600 p-2"
                       placeholder="Start (e.g., May 2024)"
                       value={e.start}
                       onChange={(ev) => updateEntry(idx, "start", ev.target.value)}
                     />
                     <input
-                      className="w-full rounded-md border border-gray-200 p-2"
+                      className="w-full rounded-md border-2 border-blue-600 p-2"
                       placeholder="End (e.g., Present)"
                       value={e.end}
                       onChange={(ev) => updateEntry(idx, "end", ev.target.value)}
@@ -159,7 +159,7 @@ export default function WorkExperience() {
                   {e.highlights.map((h, hIdx) => (
                     <div key={hIdx} className="flex gap-2">
                       <input
-                        className="w-full rounded-md border border-gray-200 p-2"
+                        className="w-full rounded-md border-2 border-blue-600 p-2"
                         placeholder="Impact bullet (e.g., Built X to improve Y by Z%)"
                         value={h}
                         onChange={(ev) => updateHighlight(idx, hIdx, ev.target.value)}
