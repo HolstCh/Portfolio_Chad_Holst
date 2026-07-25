@@ -10,7 +10,7 @@ export default function WorkExperience() {
       start: "August 6, 2024",
       end: "Present",
       highlights: ["Dockerized a GNSS simulator and migrated its Jenkins pipeline to GitLab CI/CD, cutting deployment time by 25%",
-        "Built a Grafana dashboard with a Python ETL, monitoring 30 GitLab pipelines daily for failure and bottleneck trends",
+        "Built a Grafana dashboard with a Python ETL, monitoring 200+ GitLab pipelines daily for failure and bottleneck trends",
         "Automated software updates on 130+ nodes with Ansible, reducing manual effort by 95% and ensuring consistency",
         "Supported 6 engineering teams with CI/CD workflows, troubleshooting and resolving failures across DevOps tools",
         "Upgraded and maintained DevOps tools and Docker images, improving system reliability and minimizing downtime"
